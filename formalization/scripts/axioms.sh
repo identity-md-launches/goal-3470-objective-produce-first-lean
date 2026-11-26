@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# #print axioms for every declaration in manifest/declarations.json (or --manifest FILE).
-set -uo pipefail
-source "$(dirname "${BASH_SOURCE[0]}")/env.sh"
-timeout 540 python3 -I scripts/check.py axioms "$@" 2>&1 | tee build/axioms.log
-exit "${PIPESTATUS[0]}"
+# Every entry point is bounded, fail-closed, and accepts --runtime DIR.
+set -euo pipefail
+D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec timeout --signal=TERM --kill-after=5s 530s python3 -I -B "$D/harness.py" axioms "$@"

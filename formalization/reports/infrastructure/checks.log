@@ -1,0 +1,360 @@
+Lean runtime repair v2 / harness. Evidence from this worker, not independent certification.
+Paths are normalized: $CHECKOUT is the checkout root. No environment/configuration values are included.
+All shell entry points have timeout 530s + 5s termination grace. No Mathlib library modules were built.
+
+Initial preparation failures, repaired before the passing runs:
+1. curl -fL --max-time 55 -o test/scratch/harness/downloads/mathlib.tar.gz https://codeload.github.com/leanprover-community/mathlib4/tar.gz/fc4f59e577feb1a4956671bc04ac18aaaf8cd842 succeeded (0), but tar -xzf ... --strip-components=1 -C test/scratch/harness/runtime/src/mathlib failed (2): destination did not exist. Created it and extracted successfully (0).
+2. First direct Cache get used a clean environment without transport settings: exit 1; curl exit 6, Could not resolve host: cache.mathlib.org; 9117 downloads failed. Explicit online preparation now forwards only proxy transport variables. Retry fetched/decompressed all 9117 artifacts (0). Offline forwards no such variables and seccomp denies sockets.
+3. An exploratory rg of the toolchain source during extraction exited 2 (file not yet present); repeated after extraction succeeded.
+4. The first full check could not resolve the project module root before any olean existed. The builder now creates output directories (never dummy oleans) before --deps.
+5. TOML dotted keys originally became dictionary-valued -D arguments. Recursively flattening keys preserves the package's exact Lean options.
+6. Lean.Name.mkStrList is absent at the pinned release. The origin check now uses String.toName. Genuine tests confirm correct/missing/wrong-module declarations.
+7. Cache get initially autodetected the enclosing checkout's remote. Final preparation passes --repo=leanprover-community/mathlib4 and prevents parent-repository discovery; the exact command was separately tested, exit 0, Already decompressed 9117 files.
+
+All fixture source changes, manifests, stale oleans, copied runtimes, compiler builds and test programs are under test/scratch and are not submitted. Before the successful full run, chmod -R a-w test/scratch/harness/runtime made the supplied runtime read-only; its complete inventory remained valid. The successful full fixture has two tracked Ring proofs at Target01/RouteA and Target08/RouteB, with RouteB importing RouteA. Each has its own route declarations.json, and the legacy registry is empty. The root does not import either. The named fixture additionally has an unrelated invalid RouteB proof and a deliberately tracked corrupt RouteA olean. The failing fixture has a type-invalid RouteA proof plus a valid former olean tracked in .lake/build; a fresh build must reject it.
+
+The forbidden-axiom test deliberately invokes Lean directly on a scratch axiom after separately proving the source scanner rejects it. This isolates the axiom-output gate: real #print axioms reports [harnessForbidden], and that gate rejects it. This is not an accepted proof submission.
+
+=== final scope, pins and syntax ===
+$ python3 -B test/scratch/harness/final_checks.py
+COMMAND EXIT: 0
+Python 3.11 grammar: PASS
+bash -n formalization/scripts/*.sh: PASS
+git diff --check: exit 0
+git diff --exit-code -- formalization/lakefile.toml formalization/lake-manifest.json formalization/lean-toolchain formalization/MissingTheorems.lean formalization/manifest/declarations.json foundry.toml remappings.txt lib .github : exit 0 (configuration, pins, proof root unchanged)
+Changed/untracked source scope: PASS
+Required JSON artifact: valid, <=20000 bytes, untracked, gates.harness=pass
+Report paths normalized; no runtime or build output added to source paths: PASS
+
+=== Python checks ===
+$ python3 -B test/scratch/harness/unit_checks.py
+COMMAND EXIT: 0
+test_capture_does_not_discard_stderr (__main__.Tests.test_capture_does_not_discard_stderr) ... $ /usr/bin/python3 -I -c 'import sys; print("unexpected diagnostic", file=sys.stderr)'
+exit=0
+ok
+test_duplicate_and_route_mismatch (__main__.Tests.test_duplicate_and_route_mismatch) ... ok
+test_empty_and_missing_declarations (__main__.Tests.test_empty_and_missing_declarations) ... manifest $CHECKOUT/test/scratch/tmpsyb7kcfk/declarations.json: 0 declaration(s)
+UNVERIFIED proof gate: infrastructure-only empty mode
+ok
+test_entrypoint_failures (__main__.Tests.test_entrypoint_failures) ... ok
+test_network_filter (__main__.Tests.test_network_filter) ... ok
+test_runtime_missing_and_links (__main__.Tests.test_runtime_missing_and_links) ... ok
+test_scanner_boundaries_and_lines (__main__.Tests.test_scanner_boundaries_and_lines) ... network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+descendant socket denial: PASS
+
+BANNED MissingTheorems.lean:1: axiom
+ok
+test_strict_axiom_output (__main__.Tests.test_strict_axiom_output) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.937s
+
+OK
+
+=== manifest and pipeline negatives ===
+$ python3 -B test/scratch/harness/negative_cli_checks.py
+COMMAND EXIT: 0
+$ axioms.sh --runtime <matching-public-runtime> --manifest reports/missing.json
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+FAIL: missing manifest file: $CHECKOUT/lean-harness-u1eldk_g/formalization/reports/missing.json
+
+exit= 1
+$ axioms.sh --runtime <matching-public-runtime> --manifest reports/Target01/RouteA/declarations.json
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+FAIL: empty declaration manifest: $CHECKOUT/lean-harness-9vpjyyzn/formalization/reports/Target01/RouteA/declarations.json
+
+exit= 1
+$ axioms.sh --runtime <matching-public-runtime> --manifest reports/Target01/RouteA/declarations.json
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+FAIL: invalid project module: None
+
+exit= 1
+$ axioms.sh --runtime <matching-public-runtime> --manifest reports/Target01/RouteA/declarations.json
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+FAIL: invalid/missing declaration name: None
+
+exit= 1
+$ axioms.sh --runtime <matching-public-runtime>
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+manifest $CHECKOUT/lean-harness-vymcx97x/formalization/reports/Target01/RouteA/declarations.json: 1 declaration(s)
+FAIL: duplicate declaration: MissingTheorems.Target01.RouteA.smoke_add_comm
+
+exit= 1
+$ axioms.sh --runtime <matching-public-runtime>
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+BANNED MissingTheorems.lean:1: axiom
+FAIL: forbidden proof escapes: 1 hit(s)
+
+exit= 1
+$ bash -o pipefail -c <build.sh --runtime absent | tee pipeline-output.log>
+FAIL: missing runtime manifest: $CHECKOUT/test/scratch/harness/absent-runtime
+
+exit= 1
+negative CLI checks: PASS 7 expected failures, no runtime execution for malformed inputs
+
+=== runtime schema negatives ===
+$ timeout 90 python3 -I -B test/scratch/harness/runtime_negative_checks.py
+COMMAND EXIT: 0
+EXPECTED REJECTION: wrong Lean pin runtime lean mismatch (expected v4.36.0)
+EXPECTED REJECTION: wrong Mathlib pin runtime mathlib mismatch (expected fc4f59e577feb1a4956671bc04ac18aaaf8cd842)
+EXPECTED REJECTION: wrong platform runtime platform mismatch (expected linux-x64)
+EXPECTED REJECTION: escaping path unsafe runtime path: '../escape'
+EXPECTED REJECTION: duplicate payload entry duplicate/excluded runtime path: src/Cli/.github/workflows/build.yml
+EXPECTED REJECTION: wrong source revision runtime source URLs/revisions mismatch
+EXPECTED REJECTION: missing actual payload runtime inventory mismatch: missing=['src/Cli/.github/workflows/build.yml', 'src/Cli/.gitignore', 'src/Cli/.lake/build/ir/Cli.c', 'src/Cli/.lake/build/ir/Cli.c.hash', 'src/Cli/.lake/build/ir/Cli.setup.json'] unlisted=[]
+EXPECTED REJECTION: escaped symlink runtime contains a link or special file: escape
+runtime negative checks: PASS (8 expected rejections, no substitute compiler executed)
+
+=== payload digest negative ===
+$ timeout 60 python3 -B test/scratch/harness/checksum_negative.py
+COMMAND EXIT: 0
+$ python3 -I -B formalization/scripts/harness.py validate-runtime --runtime <tampered relocated runtime>
+FAIL: runtime checksum/size mismatch: src/Cli/.github/workflows/build.yml
+
+exit= 1
+equal-length payload tamper: PASS (expected rejection; original bytes restored)
+
+=== genuine Lean negatives ===
+$ timeout 150 python3 -I -B test/scratch/harness/negative_lean_checks.py
+COMMAND EXIT: 0
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+exit=1
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:3:0: error: missing declaration
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:10:14: error(lean.unknownIdentifier): Unknown constant `MissingTheorems.Target01.RouteA.noSuchDeclaration`
+
+EXPECTED REJECTION: missing declaration command failed (exit 1): $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+exit=1
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:3:0: error: declaration/module mismatch: MissingTheorems.Target01.RouteA.smoke_add_comm expected MissingTheorems.Target08.RouteB.Smoke
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+
+EXPECTED REJECTION: wrong defining module command failed (exit 1): $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+BANNED MissingTheorems/Forbidden.lean:1: axiom
+EXPECTED REJECTION: scanner new axiom forbidden proof escapes: 1 hit(s)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems/Forbidden.olean MissingTheorems/Forbidden.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+exit=0
+'harnessForbidden' depends on axioms: [harnessForbidden]
+EXPECTED REJECTION: genuine forbidden axiom forbidden axiom for harnessForbidden: ['harnessForbidden']
+negative Lean checks: PASS (4 expected rejections; real Lean, no mock executable)
+
+=== initial import-root failure (fixed) ===
+$ test/scratch/harness/fixture/formalization/scripts/offline_test.sh --runtime test/scratch/harness/runtime --scratch-dir test/scratch/harness/relocated --keep-work
+COMMAND EXIT: 1
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+manifest $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/reports/Target01/RouteA/declarations.json: 1 declaration(s)
+manifest $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/reports/Target08/RouteB/declarations.json: 1 declaration(s)
+runtime inventory: OK (165798 files; 10740426119 bytes)
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+$ cp -a --reflink=auto $CHECKOUT/test/scratch/harness/runtime $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor
+exit=0
+runtime inventory: OK (165798 files; 10740426119 bytes)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --version
+exit=0
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lake --version
+exit=0
+Lake version 5.0.0-src+611c117 (Lean version 4.36.0)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=1
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/lib/lean/Init.olean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/lib/lean/Init.olean
+unknown module prefix 'MissingTheorems'
+
+No directory 'MissingTheorems' or file 'MissingTheorems.olean' in the search path entries:
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/mathlib/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/batteries/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/Qq/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/aesop/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/proofwidgets/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/importGraph/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/LeanSearchClient/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/plausible/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/src/Cli/.lake/build/lib/lean
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/lib/lean
+
+disposable checkout retained: $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s
+FAIL: command failed (exit 1): $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target08/RouteB/Smoke.lean
+
+=== initial dotted-option failure (fixed) ===
+$ timeout 150 python3 -I -B test/scratch/harness/recheck_relocated.py
+COMMAND EXIT: 1
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false '-Dpp={'"'"'unicode'"'"': {'"'"'fun'"'"': True}}' -DmaxSynthPendingDepth=3 '-Dweak={'"'"'linter'"'"': {'"'"'mathlibStandardSet'"'"': True}}' -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems/Target01/RouteA/Smoke.olean MissingTheorems/Target01/RouteA/Smoke.lean
+<input>:1:0: error: invalid -D parameter, unknown configuration option 'pp'
+
+If the option is defined in a library, use '-Dweak.pp' to set it conditionally
+exit=1
+Traceback (most recent call last):
+  File "$CHECKOUT/test/scratch/harness/recheck_relocated.py", line 11, in <module>
+    env=check.build(p,clean_env(p,p/'vendor/toolchain'))
+  File "$CHECKOUT/formalization/scripts/check.py", line 198, in build
+    run([lean, *flags, "-o", output, rel], cwd=root, env=env)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$CHECKOUT/formalization/scripts/common.py", line 70, in run
+    raise Failure(f"command failed (exit {result.returncode}): {shlex.join(command)}")
+common.Failure: command failed (exit 1): $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false '-Dpp={'"'"'unicode'"'"': {'"'"'fun'"'"': True}}' -DmaxSynthPendingDepth=3 '-Dweak={'"'"'linter'"'"': {'"'"'mathlibStandardSet'"'"': True}}' -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems/Target01/RouteA/Smoke.olean MissingTheorems/Target01/RouteA/Smoke.lean
+
+=== initial Lean API failure (fixed) ===
+$ timeout 150 python3 -I -B test/scratch/harness/recheck_relocated.py
+COMMAND EXIT: 1
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems/Target01/RouteA/Smoke.olean MissingTheorems/Target01/RouteA/Smoke.lean
+MissingTheorems/Target01/RouteA/Smoke.lean:2:0: warning: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target01.RouteA`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems/Target08/RouteB/Smoke.olean MissingTheorems/Target08/RouteB/Smoke.lean
+MissingTheorems/Target08/RouteB/Smoke.lean:2:0: warning: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target08.RouteB`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems.olean MissingTheorems.lean
+exit=0
+project build: OK (3 modules; dependency compilation disabled)
+manifest $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/reports/Target01/RouteA/declarations.json: 1 declaration(s)
+manifest $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/reports/Target08/RouteB/declarations.json: 1 declaration(s)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+exit=1
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:6:14: error(lean.unknownIdentifier): Unknown constant `Lean.Name.mkStrList`
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:9:47: error(lean.unknownIdentifier): Unknown constant `Lean.Name.mkStrList`
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:14:14: error(lean.unknownIdentifier): Unknown constant `Lean.Name.mkStrList`
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:17:47: error(lean.unknownIdentifier): Unknown constant `Lean.Name.mkStrList`
+'MissingTheorems.Target08.RouteB.smoke_mul_comm' depends on axioms: [propext]
+
+Traceback (most recent call last):
+  File "$CHECKOUT/test/scratch/harness/recheck_relocated.py", line 12, in <module>
+    check.axioms(p,env,check.manifests(p))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$CHECKOUT/formalization/scripts/check.py", line 249, in axioms
+    output = run([root / "vendor/toolchain/bin/lean", path], cwd=root, env=env, capture=True)
+  File "$CHECKOUT/formalization/scripts/common.py", line 70, in run
+    raise Failure(f"command failed (exit {result.returncode}): {shlex.join(command)}")
+common.Failure: command failed (exit 1): $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+
+=== repaired relocated compiler + axioms ===
+$ timeout 150 python3 -I -B test/scratch/harness/recheck_relocated.py
+COMMAND EXIT: 0
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean --deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems/Target01/RouteA/Smoke.olean MissingTheorems/Target01/RouteA/Smoke.lean
+MissingTheorems/Target01/RouteA/Smoke.lean:2:0: warning: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target01.RouteA`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems/Target08/RouteB/Smoke.olean MissingTheorems/Target08/RouteB/Smoke.lean
+MissingTheorems/Target08/RouteB/Smoke.lean:2:0: warning: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target08.RouteB`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems.olean MissingTheorems.lean
+exit=0
+project build: OK (3 modules; dependency compilation disabled)
+manifest $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/reports/Target01/RouteA/declarations.json: 1 declaration(s)
+manifest $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/reports/Target08/RouteB/declarations.json: 1 declaration(s)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+exit=0
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+'MissingTheorems.Target08.RouteB.smoke_mul_comm' depends on axioms: [propext]
+axiom check: OK (2 declarations; allowed: Classical.choice, Quot.sound, propext)
+

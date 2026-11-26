@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-# Build every present proof module (all MissingTheorems.+ submodules) against the prebuilt Mathlib
-# cache, after the banned-token scan. Works from the repo root: formalization/scripts/build.sh
-set -uo pipefail
-source "$(dirname "${BASH_SOURCE[0]}")/env.sh"
-mkdir -p build
-python3 -I scripts/check.py banned || exit 1
-timeout 540 lake build MissingTheorems 2>&1 | tee build/build.log
-exit "${PIPESTATUS[0]}"
+# Every entry point is bounded, fail-closed, and accepts --runtime DIR.
+set -euo pipefail
+D="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec timeout --signal=TERM --kill-after=5s 530s python3 -I -B "$D/harness.py" build "$@"

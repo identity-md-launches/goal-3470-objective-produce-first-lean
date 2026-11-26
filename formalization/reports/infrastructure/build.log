@@ -1,0 +1,440 @@
+Lean runtime repair v2 / harness. Evidence from this worker, not independent certification.
+Paths are normalized: $CHECKOUT is the checkout root. No environment/configuration values are included.
+All shell entry points have timeout 530s + 5s termination grace. No Mathlib library modules were built.
+
+=== prepare sources ===
+$ formalization/scripts/prepare_runtime.sh --online --phase sources --output test/scratch/harness/reprepared
+COMMAND EXIT: 0
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/mathlib.tar.gz https://codeload.github.com/leanprover-community/mathlib4/tar.gz/fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/batteries.tar.gz https://codeload.github.com/leanprover-community/batteries/tar.gz/b4b25a3886a16daacaf6615c2eea7170a6e8f458
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/aesop.tar.gz https://codeload.github.com/leanprover-community/aesop/tar.gz/66ff77cf0c4c898799e4b94d14db55f7a02d0c5a
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/Qq.tar.gz https://codeload.github.com/leanprover-community/quote4/tar.gz/ff055a2fcc835935e0ae607339b455a5f5896b4b
+exit=0
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/proofwidgets.tar.gz https://codeload.github.com/leanprover-community/ProofWidgets4/tar.gz/2f0f3520daeac2d9310ff25b7a877a0e5cdaa203
+exit=0
+exit=0
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/importGraph.tar.gz https://codeload.github.com/leanprover-community/import-graph/tar.gz/8370c640afcd1cc3fb1cb9bf1560cc66eafee5e0
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/LeanSearchClient.tar.gz https://codeload.github.com/leanprover-community/LeanSearchClient/tar.gz/4fb58e749ef3fc0395fe274f6cab70c2ea85f1c9
+exit=0
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/plausible.tar.gz https://codeload.github.com/leanprover-community/plausible/tar.gz/054b228ce0ac61d767c6e71ba73a24728f191b72
+exit=0
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-dq9m8euu/Cli.tar.gz https://codeload.github.com/leanprover/lean4-cli/tar.gz/50810f72af7618bee62fe9800dc26e806c188703
+exit=0
+exit=0
+exit=0
+exit=0
+online preparation phase sources: PASS
+
+=== prepare Lean toolchain ===
+$ formalization/scripts/prepare_runtime.sh --online --phase toolchain --output test/scratch/harness/reprepared
+COMMAND EXIT: 0
+$ curl -q --fail --location --silent --show-error --max-time 450 --output $CHECKOUT/test/scratch/harness/lean-prepare-fg7s5qb8/lean.tar.zst https://github.com/leanprover/lean4/releases/download/v4.36.0/lean-4.36.0-linux.tar.zst
+exit=0
+$ tar --zstd -xf $CHECKOUT/test/scratch/harness/lean-prepare-fg7s5qb8/lean.tar.zst --strip-components=1 -C $CHECKOUT/test/scratch/harness/lean-prepare-fg7s5qb8/toolchain
+exit=0
+online preparation phase toolchain: PASS
+
+=== prepare public caches ===
+$ formalization/scripts/prepare_runtime.sh --online --phase cache --output test/scratch/harness/reprepared
+COMMAND EXIT: 0
+$ $CHECKOUT/test/scratch/harness/reprepared/toolchain/bin/lake build mathlib/cache:exe Cli
+✔ [4/68] Built Cache.Cli (735ms)
+✔ [6/68] Built Cache.Cli:c.o (430ms)
+✔ [7/68] Built Cache.Env (1.4s)
+✔ [9/68] Built Cache.Env:c.o (327ms)
+✔ [10/68] Built Cache.Infra (572ms)
+✔ [12/68] Built Batteries.Tactic.OpenPrivate (2.4s)
+✔ [14/68] Built Cache.Infra:c.o (316ms)
+✔ [15/68] Built Cache.Location (850ms)
+✔ [17/68] Built Cache.Location:c.o (510ms)
+✔ [18/68] Built Cache.Lean (3.5s)
+✔ [20/68] Built Cache.Lean:c.o (277ms)
+✔ [21/68] Built Batteries.Tactic.OpenPrivate:c.o (1.8s)
+✔ [22/68] Built Cache.IO (2.5s)
+✔ [24/68] Built Cache.Hashing (879ms)
+✔ [26/68] Built Cache.Hashing:c.o (862ms)
+✔ [27/68] Built Cache.IO:c.o (2.5s)
+✔ [28/68] Built Cli.Basic (9.0s)
+✔ [30/68] Built Cli.Extensions (663ms)
+✔ [32/68] Built Cache.Requests (2.9s)
+✔ [34/68] Built Cli (442ms)
+✔ [37/68] Built Cache.Marker (586ms)
+✔ [39/68] Built Cache.Marker:c.o (213ms)
+✔ [40/68] Built Cache.Upload.Curl (627ms)
+✔ [42/68] Built Cache.Upload.Rclone (745ms)
+✔ [44/68] Built Cache.Query (725ms)
+✔ [46/68] Built Cache.Upload.Curl:c.o (350ms)
+✔ [47/68] Built Cache.Upload.Rclone:c.o (395ms)
+✔ [48/68] Built Cache.Upload.Azure (564ms)
+✔ [50/68] Built Cache.Query:c.o (453ms)
+✔ [51/68] Built Cache.Upload.S3 (694ms)
+✔ [53/68] Built Cache.Upload.Azure:c.o (197ms)
+✔ [54/68] Built Cache.Warning (757ms)
+✔ [56/68] Built Cache.Upload.S3:c.o (437ms)
+✔ [57/68] Built Cache.Upload.Defs (545ms)
+✔ [59/68] Built Cache.Warning:c.o (543ms)
+✔ [60/68] Built Cache.Upload.Defs:c.o (222ms)
+✔ [61/68] Built Cache.Upload (557ms)
+✔ [63/68] Built Cache.Upload:c.o (185ms)
+✔ [64/68] Built Cache.Main (1.4s)
+✔ [66/68] Built Cache.Requests:c.o (4.8s)
+✔ [67/68] Built Cache.Main:c.o (1.5s)
+✔ [68/68] Built cache:exe (1.2s)
+Build completed successfully (68 jobs).
+exit=0
+$ $CHECKOUT/test/scratch/harness/reprepared/src/mathlib/.lake/build/bin/cache get
+Note: curl 8.18 runs parallel downloads without retries.
+Current branch: HEAD
+Initial cache invocation auto-detected the checkout remote; final code pins the public Mathlib repo explicitly.
+Attempting to download 9117 file(s) from the public Mathlib cache at https://cache.mathlib.org/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/9117 = 0%, 31 KB/s]
+Downloaded: 50 file(s) [attempted 50/9117 = 0%, 190 KB/s]
+Downloaded: 87 file(s) [attempted 87/9117 = 0%, 263 KB/s]
+Downloaded: 121 file(s) [attempted 121/9117 = 1%, 220 KB/s]
+Downloaded: 150 file(s) [attempted 150/9117 = 1%, 491 KB/s]
+Downloaded: 200 file(s) [attempted 200/9117 = 2%, 255 KB/s]
+Downloaded: 249 file(s) [attempted 249/9117 = 2%, 71 KB/s]
+Downloaded: 299 file(s) [attempted 299/9117 = 3%, 722 KB/s]
+Downloaded: 348 file(s) [attempted 348/9117 = 3%, 213 KB/s]
+Downloaded: 398 file(s) [attempted 398/9117 = 4%, 26 KB/s]
+Downloaded: 449 file(s) [attempted 449/9117 = 4%, 725 KB/s]
+Downloaded: 541 file(s) [attempted 541/9117 = 5%, 253 KB/s]
+Downloaded: 598 file(s) [attempted 598/9117 = 6%, 5261 KB/s]
+Downloaded: 682 file(s) [attempted 682/9117 = 7%, 1928 KB/s]
+Downloaded: 756 file(s) [attempted 756/9117 = 8%, 569 KB/s]
+Downloaded: 826 file(s) [attempted 826/9117 = 9%, 823 KB/s]
+Downloaded: 906 file(s) [attempted 906/9117 = 9%, 453 KB/s]
+Downloaded: 973 file(s) [attempted 973/9117 = 10%, 1023 KB/s]
+Downloaded: 1061 file(s) [attempted 1061/9117 = 11%, 865 KB/s]
+Downloaded: 1118 file(s) [attempted 1118/9117 = 12%, 543 KB/s]
+Downloaded: 1169 file(s) [attempted 1169/9117 = 12%, 370 KB/s]
+Downloaded: 1224 file(s) [attempted 1224/9117 = 13%, 679 KB/s]
+Downloaded: 1282 file(s) [attempted 1282/9117 = 14%, 5258 KB/s]
+Downloaded: 1351 file(s) [attempted 1351/9117 = 14%, 1267 KB/s]
+Downloaded: 1402 file(s) [attempted 1402/9117 = 15%, 1051 KB/s]
+Downloaded: 1471 file(s) [attempted 1471/9117 = 16%, 255 KB/s]
+Downloaded: 1529 file(s) [attempted 1529/9117 = 16%, 1859 KB/s]
+Downloaded: 1590 file(s) [attempted 1590/9117 = 17%, 2934 KB/s]
+Downloaded: 1619 file(s) [attempted 1619/9117 = 17%, 98 KB/s]
+Downloaded: 1653 file(s) [attempted 1653/9117 = 18%, 320 KB/s]
+Downloaded: 1709 file(s) [attempted 1709/9117 = 18%, 421 KB/s]
+Downloaded: 1741 file(s) [attempted 1741/9117 = 19%, 520 KB/s]
+Downloaded: 1777 file(s) [attempted 1777/9117 = 19%, 386 KB/s]
+Downloaded: 1829 file(s) [attempted 1829/9117 = 20%, 914 KB/s]
+Downloaded: 1871 file(s) [attempted 1871/9117 = 20%, 352 KB/s]
+Downloaded: 1899 file(s) [attempted 1899/9117 = 20%, 139 KB/s]
+Downloaded: 1932 file(s) [attempted 1932/9117 = 21%, 419 KB/s]
+Downloaded: 1983 file(s) [attempted 1983/9117 = 21%, 1183 KB/s]
+Downloaded: 2071 file(s) [attempted 2071/9117 = 22%, 1142 KB/s]
+Downloaded: 2137 file(s) [attempted 2137/9117 = 23%, 4538 KB/s]
+Downloaded: 2219 file(s) [attempted 2219/9117 = 24%, 95 KB/s]
+Downloaded: 2290 file(s) [attempted 2290/9117 = 25%, 2638 KB/s]
+Downloaded: 2357 file(s) [attempted 2357/9117 = 25%, 175 KB/s]
+Downloaded: 2442 file(s) [attempted 2442/9117 = 26%, 229 KB/s]
+Downloaded: 2515 file(s) [attempted 2515/9117 = 27%, 483 KB/s]
+Downloaded: 2585 file(s) [attempted 2585/9117 = 28%, 70 KB/s]
+Downloaded: 2644 file(s) [attempted 2644/9117 = 29%, 1014 KB/s]
+Downloaded: 2725 file(s) [attempted 2725/9117 = 29%, 277 KB/s]
+Downloaded: 2795 file(s) [attempted 2795/9117 = 30%, 1327 KB/s]
+Downloaded: 2883 file(s) [attempted 2883/9117 = 31%, 407 KB/s]
+Downloaded: 2936 file(s) [attempted 2936/9117 = 32%, 255 KB/s]
+Downloaded: 3022 file(s) [attempted 3022/9117 = 33%, 654 KB/s]
+Downloaded: 3102 file(s) [attempted 3102/9117 = 34%, 1231 KB/s]
+Downloaded: 3180 file(s) [attempted 3180/9117 = 34%, 95 KB/s]
+Downloaded: 3252 file(s) [attempted 3252/9117 = 35%, 1738 KB/s]
+Downloaded: 3327 file(s) [attempted 3327/9117 = 36%, 340 KB/s]
+Downloaded: 3395 file(s) [attempted 3395/9117 = 37%, 762 KB/s]
+Downloaded: 3468 file(s) [attempted 3468/9117 = 38%, 393 KB/s]
+Downloaded: 3533 file(s) [attempted 3533/9117 = 38%, 198 KB/s]
+Downloaded: 3618 file(s) [attempted 3618/9117 = 39%, 346 KB/s]
+Downloaded: 3683 file(s) [attempted 3683/9117 = 40%, 1100 KB/s]
+Downloaded: 3763 file(s) [attempted 3763/9117 = 41%, 168 KB/s]
+Downloaded: 3822 file(s) [attempted 3822/9117 = 41%, 169 KB/s]
+Downloaded: 3876 file(s) [attempted 3876/9117 = 42%, 259 KB/s]
+Downloaded: 3923 file(s) [attempted 3923/9117 = 43%, 158 KB/s]
+Downloaded: 3994 file(s) [attempted 3994/9117 = 43%, 651 KB/s]
+Downloaded: 4068 file(s) [attempted 4068/9117 = 44%, 1050 KB/s]
+Downloaded: 4141 file(s) [attempted 4141/9117 = 45%, 1603 KB/s]
+Downloaded: 4217 file(s) [attempted 4217/9117 = 46%, 198 KB/s]
+Downloaded: 4294 file(s) [attempted 4294/9117 = 47%, 385 KB/s]
+Downloaded: 4363 file(s) [attempted 4363/9117 = 47%, 41 KB/s]
+Downloaded: 4446 file(s) [attempted 4446/9117 = 48%, 186 KB/s]
+Downloaded: 4526 file(s) [attempted 4526/9117 = 49%, 934 KB/s]
+Downloaded: 4610 file(s) [attempted 4610/9117 = 50%, 174 KB/s]
+Downloaded: 4678 file(s) [attempted 4678/9117 = 51%, 444 KB/s]
+Downloaded: 4751 file(s) [attempted 4751/9117 = 52%, 123 KB/s]
+Downloaded: 4819 file(s) [attempted 4819/9117 = 52%, 662 KB/s]
+Downloaded: 4903 file(s) [attempted 4903/9117 = 53%, 59 KB/s]
+Downloaded: 4988 file(s) [attempted 4988/9117 = 54%, 359 KB/s]
+Downloaded: 5063 file(s) [attempted 5063/9117 = 55%, 477 KB/s]
+Downloaded: 5136 file(s) [attempted 5136/9117 = 56%, 897 KB/s]
+Downloaded: 5187 file(s) [attempted 5187/9117 = 56%, 481 KB/s]
+Downloaded: 5239 file(s) [attempted 5239/9117 = 57%, 287 KB/s]
+Downloaded: 5328 file(s) [attempted 5328/9117 = 58%, 1001 KB/s]
+Downloaded: 5395 file(s) [attempted 5395/9117 = 59%, 676 KB/s]
+Downloaded: 5475 file(s) [attempted 5475/9117 = 60%, 183 KB/s]
+Downloaded: 5544 file(s) [attempted 5544/9117 = 60%, 689 KB/s]
+Downloaded: 5620 file(s) [attempted 5620/9117 = 61%, 59 KB/s]
+Downloaded: 5685 file(s) [attempted 5685/9117 = 62%, 265 KB/s]
+Downloaded: 5761 file(s) [attempted 5761/9117 = 63%, 113 KB/s]
+Downloaded: 5822 file(s) [attempted 5822/9117 = 63%, 646 KB/s]
+Downloaded: 5875 file(s) [attempted 5875/9117 = 64%, 273 KB/s]
+Downloaded: 5955 file(s) [attempted 5955/9117 = 65%, 1145 KB/s]
+Downloaded: 6007 file(s) [attempted 6007/9117 = 65%, 1481 KB/s]
+Downloaded: 6060 file(s) [attempted 6060/9117 = 66%, 1262 KB/s]
+Downloaded: 6152 file(s) [attempted 6152/9117 = 67%, 608 KB/s]
+Downloaded: 6203 file(s) [attempted 6203/9117 = 68%, 580 KB/s]
+Downloaded: 6291 file(s) [attempted 6291/9117 = 69%, 1548 KB/s]
+Downloaded: 6348 file(s) [attempted 6348/9117 = 69%, 994 KB/s]
+Downloaded: 6399 file(s) [attempted 6399/9117 = 70%, 109 KB/s]
+Downloaded: 6470 file(s) [attempted 6470/9117 = 70%, 127 KB/s]
+Downloaded: 6535 file(s) [attempted 6535/9117 = 71%, 626 KB/s]
+Downloaded: 6618 file(s) [attempted 6618/9117 = 72%, 620 KB/s]
+Downloaded: 6685 file(s) [attempted 6685/9117 = 73%, 318 KB/s]
+Downloaded: 6735 file(s) [attempted 6735/9117 = 73%, 228 KB/s]
+Downloaded: 6809 file(s) [attempted 6809/9117 = 74%, 687 KB/s]
+Downloaded: 6880 file(s) [attempted 6880/9117 = 75%, 234 KB/s]
+Downloaded: 6945 file(s) [attempted 6945/9117 = 76%, 112 KB/s]
+Downloaded: 7021 file(s) [attempted 7021/9117 = 77%, 289 KB/s]
+Downloaded: 7076 file(s) [attempted 7076/9117 = 77%, 2634 KB/s]
+Downloaded: 7139 file(s) [attempted 7139/9117 = 78%, 80 KB/s]
+Downloaded: 7221 file(s) [attempted 7221/9117 = 79%, 520 KB/s]
+Downloaded: 7303 file(s) [attempted 7303/9117 = 80%, 258 KB/s]
+Downloaded: 7383 file(s) [attempted 7383/9117 = 80%, 91 KB/s]
+Downloaded: 7450 file(s) [attempted 7450/9117 = 81%, 232 KB/s]
+Downloaded: 7514 file(s) [attempted 7514/9117 = 82%, 178 KB/s]
+Downloaded: 7591 file(s) [attempted 7591/9117 = 83%, 148 KB/s]
+Downloaded: 7648 file(s) [attempted 7648/9117 = 83%, 205 KB/s]
+Downloaded: 7723 file(s) [attempted 7723/9117 = 84%, 166 KB/s]
+Downloaded: 7798 file(s) [attempted 7798/9117 = 85%, 1269 KB/s]
+Downloaded: 7884 file(s) [attempted 7884/9117 = 86%, 1076 KB/s]
+Downloaded: 7941 file(s) [attempted 7941/9117 = 87%, 370 KB/s]
+Downloaded: 8035 file(s) [attempted 8035/9117 = 88%, 1114 KB/s]
+Downloaded: 8124 file(s) [attempted 8124/9117 = 89%, 782 KB/s]
+Downloaded: 8182 file(s) [attempted 8182/9117 = 89%, 379 KB/s]
+Downloaded: 8269 file(s) [attempted 8269/9117 = 90%, 960 KB/s]
+Downloaded: 8323 file(s) [attempted 8323/9117 = 91%, 293 KB/s]
+Downloaded: 8387 file(s) [attempted 8387/9117 = 91%, 124 KB/s]
+Downloaded: 8469 file(s) [attempted 8469/9117 = 92%, 758 KB/s]
+Downloaded: 8544 file(s) [attempted 8544/9117 = 93%, 1088 KB/s]
+Downloaded: 8623 file(s) [attempted 8623/9117 = 94%, 424 KB/s]
+Downloaded: 8698 file(s) [attempted 8698/9117 = 95%, 158 KB/s]
+Downloaded: 8759 file(s) [attempted 8759/9117 = 96%, 1738 KB/s]
+Downloaded: 8845 file(s) [attempted 8845/9117 = 97%, 753 KB/s]
+Downloaded: 8870 file(s) [attempted 8870/9117 = 97%, 312 KB/s]
+Downloaded: 8927 file(s) [attempted 8927/9117 = 97%, 1439 KB/s]
+Downloaded: 9001 file(s) [attempted 9001/9117 = 98%, 370 KB/s]
+Downloaded: 9072 file(s) [attempted 9072/9117 = 99%, 1422 KB/s]
+Downloaded: 9117 file(s) [attempted 9117/9117 = 100%, 1422 KB/s]
+Still decompressing downloaded files...
+Decompressed 9117 file(s)
+Decompressing 403 file(s) (8714 already decompressed)
+Decompressed in 25 ms
+Completed successfully!
+exit=0
+online preparation phase cache: PASS
+
+=== seal inventory ===
+$ formalization/scripts/prepare_runtime.sh --online --phase seal --output test/scratch/harness/reprepared
+COMMAND EXIT: 0
+runtime inventory: OK (165798 files; 10740429590 bytes)
+online preparation phase seal: PASS
+
+=== explicit upstream cache repo ===
+$ timeout 90 python3 -I -B test/scratch/harness/cache_explicit_repo_check.py
+COMMAND EXIT: 0
+$ $CHECKOUT/test/scratch/harness/reprepared/src/mathlib/.lake/build/bin/cache get --repo=leanprover-community/mathlib4
+Note: curl 8.18 runs parallel downloads without retries.
+Warning: failed to run Git to determine Mathlib's repository from origin remote
+Ensure Git is installed and the 'origin' remote points to its GitHub repository.
+Continuing to fetch the cache from leanprover-community/mathlib4.
+Using cache from leanprover-community/mathlib4.
+No files to download
+Already decompressed 9117 file(s)
+exit=0
+
+=== full fresh offline check ===
+$ test/scratch/harness/fixture/formalization/scripts/offline_test.sh --runtime test/scratch/harness/runtime --scratch-dir test/scratch/harness/final-relocated --keep-work
+COMMAND EXIT: 0
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+manifest $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/reports/Target01/RouteA/declarations.json: 1 declaration(s)
+manifest $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/reports/Target08/RouteB/declarations.json: 1 declaration(s)
+runtime inventory: OK (165798 files; 10740426119 bytes)
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+$ cp -a --reflink=auto $CHECKOUT/test/scratch/harness/runtime $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor
+exit=0
+runtime inventory: OK (165798 files; 10740426119 bytes)
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean --version
+exit=0
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lake --version
+exit=0
+Lake version 5.0.0-src+611c117 (Lean version 4.36.0)
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target08/RouteB/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean --deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/.lake/build/lib/lean/MissingTheorems/Target01/RouteA/Smoke.olean MissingTheorems/Target01/RouteA/Smoke.lean
+MissingTheorems/Target01/RouteA/Smoke.lean:2:0: warning: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target01.RouteA`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+exit=0
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/.lake/build/lib/lean/MissingTheorems/Target08/RouteB/Smoke.olean MissingTheorems/Target08/RouteB/Smoke.lean
+MissingTheorems/Target08/RouteB/Smoke.lean:2:0: warning: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target08.RouteB`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+exit=0
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/.lake/build/lib/lean/MissingTheorems.olean MissingTheorems.lean
+exit=0
+project build: OK (3 modules; dependency compilation disabled)
+$ $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5/formalization/.lake/axioms_check.lean
+exit=0
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+'MissingTheorems.Target08.RouteB.smoke_mul_comm' depends on axioms: [propext]
+axiom check: OK (2 declarations; allowed: Classical.choice, Quot.sound, propext)
+offline: PASS (supplemental runtime; committed-only offline delivery is UNVERIFIED)
+disposable checkout retained: $CHECKOUT/test/scratch/harness/final-relocated/lean-harness-1dv0e6h5
+
+=== independent named module ===
+$ test/scratch/harness/worker-fixture/formalization/scripts/axioms.sh --runtime test/scratch/harness/reprepared --module MissingTheorems.Target01.RouteA.Smoke --manifest reports/Target01/RouteA/declarations.json --scratch-dir test/scratch/harness/named-relocated --keep-work
+COMMAND EXIT: 0
+$ git rev-parse --show-toplevel
+exit=0
+$ git ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+manifest $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/reports/Target01/RouteA/declarations.json: 1 declaration(s)
+runtime inventory: hashing 165798 files
+runtime inventory: OK (165798 files; 10740429590 bytes)
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+$ cp -a --reflink=auto $CHECKOUT/test/scratch/harness/reprepared $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/vendor
+exit=0
+runtime inventory: hashing 165798 files
+runtime inventory: OK (165798 files; 10740429590 bytes)
+$ $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/vendor/toolchain/bin/lean --version
+exit=0
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+$ $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/vendor/toolchain/bin/lake --version
+exit=0
+Lake version 5.0.0-src+611c117 (Lean version 4.36.0)
+$ $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/.lake/build/lib/lean/MissingTheorems/Target01/RouteA/Smoke.olean MissingTheorems/Target01/RouteA/Smoke.lean
+MissingTheorems/Target01/RouteA/Smoke.lean:2:0: warning: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target01.RouteA`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+exit=0
+project build: OK (1 modules; dependency compilation disabled)
+$ $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013/formalization/.lake/axioms_check.lean
+exit=0
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+axiom check: OK (1 declarations; allowed: Classical.choice, Quot.sound, propext)
+axioms: PASS (supplemental runtime; committed-only offline delivery is UNVERIFIED)
+disposable checkout retained: $CHECKOUT/test/scratch/harness/named-relocated/lean-harness-risgi013
+
+=== deliberate build failure with stale olean ===
+$ test/scratch/harness/failing-fixture/formalization/scripts/build.sh --runtime test/scratch/harness/runtime --module MissingTheorems.Target01.RouteA.Smoke --scratch-dir test/scratch/harness/failing-relocated
+COMMAND EXIT: 1
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+$ git rev-parse --show-toplevel
+exit=0
+$ git -c core.fsmonitor=false ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (3 modules, including root); NOT a complete kernel audit
+runtime inventory: hashing 165798 files
+runtime inventory: OK (165798 files; 10740426119 bytes)
+$ cp -a --reflink=auto $CHECKOUT/test/scratch/harness/runtime $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/vendor
+exit=0
+runtime inventory: hashing 165798 files
+runtime inventory: OK (165798 files; 10740426119 bytes)
+$ $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/vendor/toolchain/bin/lean --version
+exit=0
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+$ $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/vendor/toolchain/bin/lake --version
+exit=0
+Lake version 5.0.0-src+611c117 (Lean version 4.36.0)
+$ $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/vendor/toolchain/bin/lean --deps MissingTheorems/Target01/RouteA/Smoke.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/.lake/build/lib/lean/MissingTheorems/Target01/RouteA/Smoke.olean MissingTheorems/Target01/RouteA/Smoke.lean
+MissingTheorems/Target01/RouteA/Smoke.lean:2:0: warning: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target01.RouteA`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+MissingTheorems/Target01/RouteA/Smoke.lean:3:55: error: Type mismatch
+  True.intro
+has type
+  True
+but is expected to have type
+  a + b = b + a
+exit=1
+FAIL: command failed (exit 1): $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/failing-relocated/lean-harness-cixyhir1/formalization/.lake/build/lib/lean/MissingTheorems/Target01/RouteA/Smoke.olean MissingTheorems/Target01/RouteA/Smoke.lean
+
+=== actual empty package, explicit mode ===
+$ formalization/scripts/offline_test.sh --runtime test/scratch/harness/reprepared --infrastructure-only --scratch-dir test/scratch/harness/project-relocated
+COMMAND EXIT: 0
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+$ git rev-parse --show-toplevel
+exit=0
+$ git -c core.fsmonitor=false ls-files --cached -z -- formalization
+exit=0
+snapshot: fresh tracked working-tree files; all project build artifacts excluded
+token scan: OK (1 modules, including root); NOT a complete kernel audit
+manifest $CHECKOUT/test/scratch/harness/project-relocated/lean-harness-eetamdop/formalization/manifest/declarations.json: 0 declaration(s)
+UNVERIFIED proof gate: infrastructure-only empty mode
+runtime inventory: hashing 165798 files
+runtime inventory: OK (165798 files; 10740429590 bytes)
+$ cp -a --reflink=auto $CHECKOUT/test/scratch/harness/reprepared $CHECKOUT/test/scratch/harness/project-relocated/lean-harness-eetamdop/formalization/vendor
+exit=0
+runtime inventory: hashing 165798 files
+runtime inventory: OK (165798 files; 10740429590 bytes)
+$ $CHECKOUT/test/scratch/harness/project-relocated/lean-harness-eetamdop/formalization/vendor/toolchain/bin/lean --version
+exit=0
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+$ $CHECKOUT/test/scratch/harness/project-relocated/lean-harness-eetamdop/formalization/vendor/toolchain/bin/lake --version
+exit=0
+Lake version 5.0.0-src+611c117 (Lean version 4.36.0)
+$ $CHECKOUT/test/scratch/harness/project-relocated/lean-harness-eetamdop/formalization/vendor/toolchain/bin/lean --src-deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/project-relocated/lean-harness-eetamdop/formalization/vendor/toolchain/bin/lean --deps MissingTheorems.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/project-relocated/lean-harness-eetamdop/formalization/vendor/toolchain/bin/lean -DautoImplicit=false -DrelaxedAutoImplicit=false -Dpp.unicode.fun=true -DmaxSynthPendingDepth=3 -Dweak.linter.mathlibStandardSet=true -o $CHECKOUT/test/scratch/harness/project-relocated/lean-harness-eetamdop/formalization/.lake/build/lib/lean/MissingTheorems.olean MissingTheorems.lean
+exit=0
+project build: OK (1 modules; dependency compilation disabled)
+axiom check: SKIPPED (explicit infrastructure-only empty mode)
+offline: PASS (supplemental runtime; committed-only offline delivery is UNVERIFIED)
+

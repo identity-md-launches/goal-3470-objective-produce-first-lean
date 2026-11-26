@@ -1,0 +1,158 @@
+{
+  "item": "harness",
+  "schema": "lean-runtime-repair-result@1",
+  "pins": {
+    "lean": "v4.36.0",
+    "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+    "platform": "linux-x64"
+  },
+  "gates": {
+    "harness": "pass",
+    "supplemental_runtime_relocation": "pass",
+    "module_discovery": "pass",
+    "genuine_axioms": "pass",
+    "network_isolation": "pass",
+    "online_preparation": "pass",
+    "independent_named_module": "pass",
+    "failing_build_and_stale_output": "pass",
+    "negative_inputs": "pass",
+    "actual_empty_package": "pass",
+    "committed_only_offline": "unverified",
+    "named_theorem_fidelity_and_novelty": "unverified"
+  },
+  "changes": [
+    "Explicit --runtime validation and independent materialization into a disposable vendor layout; full payload SHA256/size inventory, pins, source locks, and cache checks.",
+    "Strict failure propagation and 535-second outer bounds; no implicit bootstrap/download path.",
+    "Fresh tracked working-tree snapshots exclude all project build artifacts; direct Lean project-only builds preserve package options and never schedule Mathlib compilation.",
+    "One-module and one-manifest interfaces; aggregate route manifests, duplicates/route validation, actual defining-module checks, strict axiom output allowlist.",
+    "Root and submodule forbidden-token scanning; explicit infrastructure-only empty mode; token scan is not a complete kernel audit.",
+    "Separate public pinned online preparation phases and updated usage/submission documentation."
+  ],
+  "runtime_inputs": [
+    {
+      "path": "test/scratch/harness/runtime",
+      "manifest_sha256": "068f188b5f675a5214f217177dc5c7030ce34cc407d0375fcb7959b4bb2a11e7",
+      "files": 165798,
+      "bytes": 10740426119,
+      "submitted": false
+    },
+    {
+      "path": "test/scratch/harness/reprepared",
+      "manifest_sha256": "6664088bee75a527da8107180bdc0c9f466924fe4dc2dd0ff9e09604586b9868",
+      "files": 165798,
+      "bytes": 10740429590,
+      "submitted": false
+    }
+  ],
+  "network_isolation": "Inherited Linux seccomp denies socket creation/use and io_uring; IPv4, IPv6, Unix and child-process probes return EPERM. No proxy-only claim. No HOME reassignment; allowlisted subprocess environment.",
+  "tested_commands": [
+    {
+      "command": "formalization/scripts/prepare_runtime.sh --online --phase sources --output test/scratch/harness/reprepared",
+      "exit": 0,
+      "log": "prepare-sources.log"
+    },
+    {
+      "command": "formalization/scripts/prepare_runtime.sh --online --phase toolchain --output test/scratch/harness/reprepared",
+      "exit": 0,
+      "log": "prepare-toolchain.log"
+    },
+    {
+      "command": "formalization/scripts/prepare_runtime.sh --online --phase cache --output test/scratch/harness/reprepared",
+      "exit": 0,
+      "log": "prepare-cache.log"
+    },
+    {
+      "command": "formalization/scripts/prepare_runtime.sh --online --phase seal --output test/scratch/harness/reprepared",
+      "exit": 0,
+      "log": "prepare-seal.log"
+    },
+    {
+      "command": "timeout 90 python3 -I -B test/scratch/harness/cache_explicit_repo_check.py",
+      "exit": 0,
+      "log": "cache-explicit-repo.log"
+    },
+    {
+      "command": "test/scratch/harness/fixture/formalization/scripts/offline_test.sh --runtime test/scratch/harness/runtime --scratch-dir test/scratch/harness/final-relocated --keep-work",
+      "exit": 0,
+      "log": "offline-success.log"
+    },
+    {
+      "command": "test/scratch/harness/worker-fixture/formalization/scripts/axioms.sh --runtime test/scratch/harness/reprepared --module MissingTheorems.Target01.RouteA.Smoke --manifest reports/Target01/RouteA/declarations.json --scratch-dir test/scratch/harness/named-relocated --keep-work",
+      "exit": 0,
+      "log": "named-success.log"
+    },
+    {
+      "command": "test/scratch/harness/failing-fixture/formalization/scripts/build.sh --runtime test/scratch/harness/runtime --module MissingTheorems.Target01.RouteA.Smoke --scratch-dir test/scratch/harness/failing-relocated",
+      "exit": 1,
+      "log": "build-negative.log"
+    },
+    {
+      "command": "formalization/scripts/offline_test.sh --runtime test/scratch/harness/reprepared --infrastructure-only --scratch-dir test/scratch/harness/project-relocated",
+      "exit": 0,
+      "log": "project-infrastructure.log"
+    },
+    {
+      "command": "python3 -B test/scratch/harness/final_checks.py",
+      "exit": 0,
+      "log": "final-checks.log"
+    },
+    {
+      "command": "python3 -B test/scratch/harness/unit_checks.py",
+      "exit": 0,
+      "log": "unit-checks.log"
+    },
+    {
+      "command": "python3 -B test/scratch/harness/negative_cli_checks.py",
+      "exit": 0,
+      "log": "negative-cli.log"
+    },
+    {
+      "command": "timeout 90 python3 -I -B test/scratch/harness/runtime_negative_checks.py",
+      "exit": 0,
+      "log": "runtime-negative.log"
+    },
+    {
+      "command": "timeout 60 python3 -B test/scratch/harness/checksum_negative.py",
+      "exit": 0,
+      "log": "checksum-negative.log"
+    },
+    {
+      "command": "timeout 150 python3 -I -B test/scratch/harness/negative_lean_checks.py",
+      "exit": 0,
+      "log": "negative-lean.log"
+    },
+    {
+      "command": "test/scratch/harness/fixture/formalization/scripts/offline_test.sh --runtime test/scratch/harness/runtime --scratch-dir test/scratch/harness/relocated --keep-work",
+      "exit": 1,
+      "log": "offline-first-failure.log"
+    },
+    {
+      "command": "timeout 150 python3 -I -B test/scratch/harness/recheck_relocated.py",
+      "exit": 1,
+      "log": "recheck-options-failure.log"
+    },
+    {
+      "command": "timeout 150 python3 -I -B test/scratch/harness/recheck_relocated.py",
+      "exit": 1,
+      "log": "recheck-name-api-failure.log"
+    },
+    {
+      "command": "timeout 150 python3 -I -B test/scratch/harness/recheck_relocated.py",
+      "exit": 0,
+      "log": "recheck-relocated.log"
+    }
+  ],
+  "limitations": [
+    "No theorem claims or proof/configuration/pin changes. Tests and runtimes are scratch only; source is about 60 KiB plus evidence logs.",
+    "Runtime and dependency caches are supplemental scratch artifacts, not submitted. Committed-only offline delivery is unavailable and remains UNVERIFIED.",
+    "Runtime manifest is an integrity inventory, not independent provenance authentication. Runtime/compiler/cache supplier must be trusted.",
+    "Evidence is self-checking by this worker, not an independent rebuild or theorem-fidelity review.",
+    "Token scanning is not a complete kernel audit."
+  ],
+  "failures_and_repairs": "Initial preparation failures, repaired before the passing runs:\n1. curl -fL --max-time 55 -o test/scratch/harness/downloads/mathlib.tar.gz https://codeload.github.com/leanprover-community/mathlib4/tar.gz/fc4f59e577feb1a4956671bc04ac18aaaf8cd842 succeeded (0), but tar -xzf ... --strip-components=1 -C test/scratch/harness/runtime/src/mathlib failed (2): destination did not exist. Created it and extracted successfully (0).\n2. First direct Cache get used a clean environment without transport settings: exit 1; curl exit 6, Could not resolve host: cache.mathlib.org; 9117 downloads failed. Explicit online preparation now forwards only proxy transport variables. Retry fetched/decompressed all 9117 artifacts (0). Offline forwards no such variables and seccomp denies sockets.\n3. An exploratory rg of the toolchain source during extraction exited 2 (file not yet present); repeated after extraction succeeded.\n4. The first full check could not resolve the project module root before any olean existed. The builder now creates output directories (never dummy oleans) before --deps.\n5. TOML dotted keys originally became dictionary-valued -D arguments. Recursively flattening keys preserves the package's exact Lean options.\n6. Lean.Name.mkStrList is absent at the pinned release. The origin check now uses String.toName. Genuine tests confirm correct/missing/wrong-module declarations.\n7. Cache get initially autodetected the enclosing checkout's remote. Final preparation passes --repo=leanprover-community/mathlib4 and prevents parent-repository discovery; the exact command was separately tested, exit 0, Already decompressed 9117 files.",
+  "evidence": [
+    "formalization/reports/infrastructure/build.log",
+    "formalization/reports/infrastructure/axioms.log",
+    "formalization/reports/infrastructure/checks.log"
+  ]
+}

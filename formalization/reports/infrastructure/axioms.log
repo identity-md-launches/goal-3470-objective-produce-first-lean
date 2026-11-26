@@ -1,0 +1,49 @@
+Lean runtime repair v2 / harness. Evidence from this worker, not independent certification.
+Paths are normalized: $CHECKOUT is the checkout root. No environment/configuration values are included.
+All shell entry points have timeout 530s + 5s termination grace. No Mathlib library modules were built.
+
+=== full fresh offline check ===
+$ test/scratch/harness/fixture/formalization/scripts/offline_test.sh --runtime test/scratch/harness/runtime --scratch-dir test/scratch/harness/final-relocated --keep-work
+COMMAND EXIT: 0
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+'MissingTheorems.Target08.RouteB.smoke_mul_comm' depends on axioms: [propext]
+axiom check: OK (2 declarations; allowed: Classical.choice, Quot.sound, propext)
+
+=== independent named module ===
+$ test/scratch/harness/worker-fixture/formalization/scripts/axioms.sh --runtime test/scratch/harness/reprepared --module MissingTheorems.Target01.RouteA.Smoke --manifest reports/Target01/RouteA/declarations.json --scratch-dir test/scratch/harness/named-relocated --keep-work
+COMMAND EXIT: 0
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+axiom check: OK (1 declarations; allowed: Classical.choice, Quot.sound, propext)
+
+=== actual empty package, explicit mode ===
+$ formalization/scripts/offline_test.sh --runtime test/scratch/harness/reprepared --infrastructure-only --scratch-dir test/scratch/harness/project-relocated
+COMMAND EXIT: 0
+UNVERIFIED proof gate: infrastructure-only empty mode
+axiom check: SKIPPED (explicit infrastructure-only empty mode)
+
+=== independent negative axiom checks ===
+$ timeout 150 python3 -I -B test/scratch/harness/negative_lean_checks.py
+COMMAND EXIT: 0
+network isolation: PASS (inherited Linux seccomp; IPv4/IPv6/Unix socket probes denied with EPERM)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+exit=1
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:3:0: error: missing declaration
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:10:14: error(lean.unknownIdentifier): Unknown constant `MissingTheorems.Target01.RouteA.noSuchDeclaration`
+
+EXPECTED REJECTION: missing declaration command failed (exit 1): $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+exit=1
+$CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean:3:0: error: declaration/module mismatch: MissingTheorems.Target01.RouteA.smoke_add_comm expected MissingTheorems.Target08.RouteB.Smoke
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+
+EXPECTED REJECTION: wrong defining module command failed (exit 1): $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+BANNED MissingTheorems/Forbidden.lean:1: axiom
+EXPECTED REJECTION: scanner new axiom forbidden proof escapes: 1 hit(s)
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean -o $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/build/lib/lean/MissingTheorems/Forbidden.olean MissingTheorems/Forbidden.lean
+exit=0
+$ $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/vendor/toolchain/bin/lean $CHECKOUT/test/scratch/harness/relocated/lean-harness-lifwmt3s/formalization/.lake/axioms_check.lean
+exit=0
+'harnessForbidden' depends on axioms: [harnessForbidden]
+EXPECTED REJECTION: genuine forbidden axiom forbidden axiom for harnessForbidden: ['harnessForbidden']
+negative Lean checks: PASS (4 expected rejections; real Lean, no mock executable)
+
