@@ -1,0 +1,33 @@
+# trunk-check-v5 check.log
+# commit checked: 5fff4405e5b89976ab98ba3ca43215b47368b4e2 (checkout HEAD == public clone HEAD)
+# date: 2026-11-26
+
+## clean clone
+$ git clone https://github.com/identity-md-launches/goal-3470-objective-produce-first-lean.git cl && git -C cl checkout 5fff4405e5b89976ab98ba3ca43215b47368b4e2
+HEAD=5fff4405e5b89976ab98ba3ca43215b47368b4e2
+$ find . -name "*.lean" | xargs sha256sum   (in clean clone)
+582b25b311b987d842acf2aafd038baac72ef9e60944db3a99c46799fb113e39  ./formalization/MissingTheorems.lean
+$ git log --all -- "*.lean"   (commits ever touching a .lean file)
+e99e58f identitymd: wave 2 of goal 4b73084b-2364-4345-98a7-a272655e0499
+formalization/MissingTheorems/Target06/RouteB/CasoratiWeierstrass.lean ABSENT (no such file in clean clone or checkout; not compiled)
+formalization/MissingTheorems/Target05/RouteB/Pompeiu.lean ABSENT (no such file in clean clone or checkout; not compiled)
+formalization/MissingTheorems/Target07/RouteB/Midy.lean ABSENT (no such file in clean clone or checkout; not compiled)
+formalization/MissingTheorems/Target02/RouteB/InfiniteMonkey.lean ABSENT (no such file in clean clone or checkout; not compiled)
+$ git -C cl log --all --format=%H -- formalization/MissingTheorems/Target0{2,5,6,7}/RouteB/*.lean
+(empty output = never committed on any branch)
+
+## toolchain
+2b7ab1ed8b92d2e6abfaf41344823b510064dbc9c0260cac73eb496ab2dea6eb  lean-4.36.0-linux.tar.zst
+69b68c745d0bd8dba3ab21966f8cdb14f9373bd4f1df1d17680f4b80dad98a88  pequalnp-e125f04d0dc6-packages-lean-4.36.0-linux-x64.tar.zst
+fetch.json: lean 2b7ab1ed8b92d2e6abfaf41344823b510064dbc9c0260cac73eb496ab2dea6eb, packages 69b68c745d0bd8dba3ab21966f8cdb14f9373bd4f1df1d17680f4b80dad98a88 -> both MATCH
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+
+## toolchain smoke test (not a deliverable; proves the compile command works)
+import Mathlib
+theorem smoke_two_add : (2:ℕ) + 2 = 4 := by norm_num
+#print axioms smoke_two_add
+#print axioms Complex.exp_add
+$ lean -DautoImplicit=false Smoke.lean
+'smoke_two_add' depends on axioms: [propext]
+'Complex.exp_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0
