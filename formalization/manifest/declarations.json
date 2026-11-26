@@ -1,0 +1,4 @@
+{
+  "_comment": "Append one object per exported theorem: {name, module, wikidata, target, route}. scripts/axioms.sh runs #print axioms on each. Empty on purpose in the infrastructure wave.",
+  "declarations": []
+}

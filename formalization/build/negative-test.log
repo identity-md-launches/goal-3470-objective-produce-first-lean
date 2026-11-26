@@ -1,0 +1,16 @@
+== negative test (expect failures)
+build.sh exit=1 (banned scan should fail)
+BANNED MissingTheorems/Target08/RouteB/Neg.lean:3: sorry
+BANNED MissingTheorems/Target08/RouteB/Neg.lean:4: axiom
+banned-token scan: FAIL (2 hits)
+banned exit=1
+✖ [6/898] Running MissingTheorems.Target08.RouteB.Neg
+error: MissingTheorems/Target08/RouteB/Neg.lean: bad import 'Mathlib.Logic.Basic'
+- MissingTheorems.Target08.RouteB.Neg
+manifest manifest/neg.json: 2 declaration(s)
+/home/imd/.identitymd/work/4b73084b-2364-4345-98a7-a272655e0499/46e67e35-8850-4e6c-9acf-0747b47e1383/formalization/build/axioms_check.lean:1:0: error: object file '/home/imd/.identitymd/work/4b73084b-2364-4345-98a7-a272655e0499/46e67e35-8850-4e6c-9acf-0747b47e1383/formalization/.lake/build/lib/lean/MissingTheorems/Target08/RouteB/Neg.olean' of module MissingTheorems.Target08.RouteB.Neg does not exist
+FAIL lean exited 1
+FAIL no axiom report for MissingTheorems.Target08.RouteB.bad1
+FAIL no axiom report for MissingTheorems.Target08.RouteB.bad2
+axiom check: FAIL
+axioms exit=1

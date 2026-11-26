@@ -1,0 +1,6 @@
+manifest manifest/smoke_declarations.json: 1 declaration(s)
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+
+OK   MissingTheorems.Target01.RouteA.smoke_add_comm: ['propext']
+axiom check: OK
+axioms=0

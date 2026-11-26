@@ -1,0 +1,16 @@
+banned-token scan: OK (0 hits)
+⚠ [1540/1542] Replayed MissingTheorems.Target01.RouteA.Smoke
+warning: MissingTheorems/Target01/RouteA/Smoke.lean: imports `Mathlib.Algebra.Group.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: MissingTheorems/Target01/RouteA/Smoke.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: MissingTheorems/Target01/RouteA/Smoke.lean:4:0: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace MissingTheorems.Target01.RouteA`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+⚠ [1541/1542] Ran MissingTheorems.Target01.RouteA.Smoke:irArts
+warning: MissingTheorems/Target01/RouteA/Smoke.lean: imports `Mathlib.Algebra.Group.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: MissingTheorems/Target01/RouteA/Smoke.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (1542 jobs).
+build=0

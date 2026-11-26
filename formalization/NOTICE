@@ -1,0 +1,4 @@
+This project vendors Lean 4 (Apache-2.0, Lean FRO), Mathlib, batteries, Qq, aesop, proofwidgets, importGraph,
+LeanSearchClient, plausible (leanprover-community, Apache-2.0) and lean4-cli (Apache-2.0). Their copyright
+notices are inside the vendored archives under vendor/sources/. Catalogue pages are copies of public pages of
+leanprover-community.github.io, kept as data. See vendor/PROVENANCE.md.

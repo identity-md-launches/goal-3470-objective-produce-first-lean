@@ -1,0 +1,91 @@
+aesop.tar.gz: OK
+batteries.tar.gz: OK
+Cli.tar.gz: OK
+importGraph.tar.gz: OK
+LeanSearchClient.tar.gz: OK
+mathlib-fc4f59e577fe.tar.gz: OK
+plausible.tar.gz: OK
+proofwidgets.tar.gz: OK
+Qq.tar.gz: OK
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+info: MissingTheorems: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+info: mathlib: running post-update hooks
+✔ [3/60] Built Cache.Cli (217ms)
+✔ [5/60] Built Cache.Lean (264ms)
+✔ [7/60] Built Cache.Env (222ms)
+✔ [9/60] Built Cache.Cli:c.o (105ms)
+✔ [10/60] Built Cache.Env:c.o (132ms)
+✔ [11/60] Built Cache.Lean:c.o (136ms)
+✔ [12/60] Built Cache.Infra (259ms)
+✔ [14/60] Built Batteries.Tactic.OpenPrivate (615ms)
+✔ [16/60] Built Cache.Infra:c.o (134ms)
+✔ [17/60] Built Cache.Location (336ms)
+✔ [19/60] Built Cache.Location:c.o (181ms)
+✔ [20/60] Built Batteries.Tactic.OpenPrivate:c.o (784ms)
+✔ [21/60] Built Cache.IO (924ms)
+✔ [23/60] Built Cache.Hashing (429ms)
+✔ [25/60] Built Cache.Hashing:c.o (447ms)
+✔ [26/60] Built Cache.IO:c.o (1.3s)
+✔ [27/60] Built Cache.Requests (1.3s)
+✔ [29/60] Built Cache.Marker (273ms)
+✔ [31/60] Built Cache.Marker:c.o (109ms)
+✔ [32/60] Built Cache.Upload.Curl (283ms)
+✔ [34/60] Built Cache.Upload.Rclone (312ms)
+✔ [36/60] Built Cache.Query (336ms)
+✔ [38/60] Built Cache.Upload.Curl:c.o (171ms)
+✔ [39/60] Built Cache.Upload.Azure (274ms)
+✔ [41/60] Built Cache.Upload.Rclone:c.o (180ms)
+✔ [42/60] Built Cache.Query:c.o (205ms)
+✔ [43/60] Built Cache.Upload.Azure:c.o (99ms)
+✔ [44/60] Built Cache.Upload.S3 (377ms)
+✔ [46/60] Built Cache.Warning (379ms)
+✔ [48/60] Built Cache.Upload.S3:c.o (221ms)
+✔ [49/60] Built Cache.Warning:c.o (239ms)
+✔ [50/60] Built Cache.Upload.Defs (300ms)
+✔ [52/60] Built Cache.Upload.Defs:c.o (124ms)
+✔ [53/60] Built Cache.Upload (271ms)
+✔ [55/60] Built Cache.Upload:c.o (89ms)
+✔ [56/60] Built Cache.Main (615ms)
+✔ [58/60] Built Cache.Requests:c.o (2.1s)
+✔ [59/60] Built Cache.Main:c.o (670ms)
+✔ [60/60] Built cache:exe (497ms)
+Note: curl 8.18 runs parallel downloads without retries.
+Current branch: main
+Warning: failed to run Git to determine Mathlib's repository from origin remote
+Ensure Git is installed and the 'origin' remote points to its GitHub repository.
+Continuing to fetch the cache from leanprover-community/mathlib4.
+Using cache from leanprover-community/mathlib4.
+Warning: your project pins different versions of some dependencies than Mathlib.
+This will cause `lake exe cache get` to compute wrong hashes.
+
+  plausible:
+    project: path:vendor/src/plausible
+    mathlib: 054b228ce0ac
+  LeanSearchClient:
+    project: path:vendor/src/LeanSearchClient
+    mathlib: 4fb58e749ef3
+  importGraph:
+    project: path:vendor/src/importGraph
+    mathlib: 8370c640afcd
+  proofwidgets:
+    project: path:vendor/src/proofwidgets
+    mathlib: 2f0f3520daea
+  aesop:
+    project: path:vendor/src/aesop
+    mathlib: 66ff77cf0c4c
+  Qq:
+    project: path:vendor/src/Qq
+    mathlib: ff055a2fcc83
+  batteries:
+    project: path:vendor/src/batteries
+    mathlib: b4b25a3886a1
+  Cli:
+    project: path:vendor/src/Cli
+    mathlib: 50810f72af76
+
+Remove these dependencies from your lakefile and let them come transitively from Mathlib.
+
+real	0m9.639s
+user	0m16.977s
+sys	0m4.528s

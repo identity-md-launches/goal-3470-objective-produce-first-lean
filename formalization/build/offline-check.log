@@ -1,0 +1,35 @@
+network isolation: dead-proxy only (kernel forbids netns; UNVERIFIED as true isolation)
+network unreachable (good)
+aesop.tar.gz: OK
+batteries.tar.gz: OK
+Cli.tar.gz: OK
+importGraph.tar.gz: OK
+LeanSearchClient.tar.gz: OK
+mathlib-fc4f59e577fe.tar.gz: OK
+plausible.tar.gz: OK
+proofwidgets.tar.gz: OK
+Qq.tar.gz: OK
+vendor/payload/lean-4.36.0-linux.tar.zst: OK
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+prebuilt-oleans.tar.zst: OK
+bootstrap done
+bootstrap exit=0
+warning: MissingTheorems/Target01/RouteA/Smoke.lean: imports `Mathlib.Algebra.Group.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: MissingTheorems/Target01/RouteA/Smoke.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (1544 jobs).
+build exit=0
+manifest manifest/smoke_declarations.json: 2 declaration(s)
+'MissingTheorems.Target01.RouteA.smoke_add_comm' depends on axioms: [propext]
+'MissingTheorems.Target08.RouteB.smoke_mul_comm' depends on axioms: [propext]
+
+OK   MissingTheorems.Target01.RouteA.smoke_add_comm: ['propext']
+OK   MissingTheorems.Target08.RouteB.smoke_mul_comm: ['propext']
+axiom check: OK
+axioms exit=0
+manifest /home/imd/.identitymd/work/4b73084b-2364-4345-98a7-a272655e0499/46e67e35-8850-4e6c-9acf-0747b47e1383/test/scratch/tmp.gz0X1C1O9n/formalization/manifest/declarations.json: 0 declaration(s)
+axiom check: OK (nothing to check)
+axioms (real manifest) exit=0
+
+real	0m28.837s
+user	0m20.136s
+sys	0m27.950s

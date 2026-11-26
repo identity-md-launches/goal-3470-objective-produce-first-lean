@@ -1,0 +1,5738 @@
+[
+ {
+  "id": "Q12524",
+  "href_id": "Q12524",
+  "title": "Schwenk's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q32182",
+  "href_id": "Q32182",
+  "title": "Balinski's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q98831",
+  "href_id": "Q98831",
+  "title": "Multiplication theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q117553",
+  "href_id": "Q117553",
+  "title": "Modigliani–Miller theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q119450",
+  "href_id": "Q119450",
+  "title": "Brianchon's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q132469",
+  "href_id": "Q132469",
+  "title": "Fermat's Last Theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q164262",
+  "href_id": "Q164262",
+  "title": "Lebesgue covering dimension",
+  "suffix": ""
+ },
+ {
+  "id": "Q174955",
+  "href_id": "Q174955",
+  "title": "Mihăilescu's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q179692",
+  "href_id": "Q179692",
+  "title": "Independence of the axiom of choice",
+  "suffix": ""
+ },
+ {
+  "id": "Q184410",
+  "href_id": "Q184410",
+  "title": "Four color theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q188745",
+  "href_id": "Q188745",
+  "title": "Classification of Platonic solids",
+  "suffix": ""
+ },
+ {
+  "id": "Q190026",
+  "href_id": "Q190026",
+  "title": "Ford's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q190391X",
+  "href_id": "Q190391X",
+  "title": "Lyapunov's central limit theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q193882",
+  "href_id": "Q193882",
+  "title": "Menelaus's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q194919",
+  "href_id": "Q194919",
+  "title": "Inverse eigenvalues theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q195133",
+  "href_id": "Q195133",
+  "title": "Wigner–Eckart theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q205966",
+  "href_id": "Q205966",
+  "title": "Critical line theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q207014",
+  "href_id": "Q207014",
+  "title": "Independence of the parallel postulate",
+  "suffix": ""
+ },
+ {
+  "id": "Q207244",
+  "href_id": "Q207244",
+  "title": "Sela's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q208756",
+  "href_id": "Q208756",
+  "title": "Castelnuovo theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q211981",
+  "href_id": "Q211981",
+  "title": "Hartman–Grobman theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q225973",
+  "href_id": "Q225973",
+  "title": "Ore's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q230848",
+  "href_id": "Q230848",
+  "title": "Lamé’s theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q240950",
+  "href_id": "Q240950",
+  "title": "Faltings's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q241868",
+  "href_id": "Q241868",
+  "title": "Thévenin's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q242045",
+  "href_id": "Q242045",
+  "title": "Monotone class theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q245098X",
+  "href_id": "Q245098X",
+  "title": "Bolzano's theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q245902",
+  "href_id": "Q245902",
+  "title": "Riesz–Thorin theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q248931",
+  "href_id": "Q248931",
+  "title": "Poincaré–Bendixson theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q255996",
+  "href_id": "Q255996",
+  "title": "Equipartition theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q256303",
+  "href_id": "Q256303",
+  "title": "Lax–Richtmyer theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q260928",
+  "href_id": "Q260928",
+  "title": "Jordan curve theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q266291",
+  "href_id": "Q266291",
+  "title": "Bloch's theorem (complex variables)",
+  "suffix": ""
+ },
+ {
+  "id": "Q268031",
+  "href_id": "Q268031",
+  "title": "Abel's binomial theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q268132",
+  "href_id": "Q268132",
+  "title": "Gauss–Wantzel theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q273037",
+  "href_id": "Q273037",
+  "title": "Bondy–Chvátal theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q280116",
+  "href_id": "Q280116",
+  "title": "Odd number theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q282331",
+  "href_id": "Q282331",
+  "title": "Addition theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q283690",
+  "href_id": "Q283690",
+  "title": "Arrival theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q284960",
+  "href_id": "Q284960",
+  "title": "Mordell–Weil theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q287347",
+  "href_id": "Q287347",
+  "title": "Gradient theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q321237",
+  "href_id": "Q321237",
+  "title": "Green's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q332465",
+  "href_id": "Q332465",
+  "title": "Absolute convergence theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q339495",
+  "href_id": "Q339495",
+  "title": "Symphonic theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q356895",
+  "href_id": "Q356895",
+  "title": "Adiabatic theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q357192",
+  "href_id": "Q357192",
+  "title": "Holland's schema theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q357858",
+  "href_id": "Q357858",
+  "title": "Freyd's adjoint functor theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q371685",
+  "href_id": "Q371685",
+  "title": "Kraft–McMillan theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q372037",
+  "href_id": "Q372037",
+  "title": "Seifert–van Kampen theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q376166",
+  "href_id": "Q376166",
+  "title": "Cut-elimination theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q377047",
+  "href_id": "Q377047",
+  "title": "Butterfly theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q377276",
+  "href_id": "Q377276",
+  "title": "Cook's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q379048",
+  "href_id": "Q379048",
+  "title": "Riemann–Roch theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q380576",
+  "href_id": "Q380576",
+  "title": "Measurable Riemann mapping theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q383238",
+  "href_id": "Q383238",
+  "title": "Hartogs's extension theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q384142",
+  "href_id": "Q384142",
+  "title": "Herbrand–Ribet theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q388525",
+  "href_id": "Q388525",
+  "title": "Bell's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q401319",
+  "href_id": "Q401319",
+  "title": "Puiseux's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q401905",
+  "href_id": "Q401905",
+  "title": "Skorokhod's representation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q425432",
+  "href_id": "Q425432",
+  "title": "Laurent expansion theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q428134",
+  "href_id": "Q428134",
+  "title": "Gauss–Markov theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q467205",
+  "href_id": "Q467205",
+  "title": "Fundamental theorems of welfare economics",
+  "suffix": ""
+ },
+ {
+  "id": "Q467756",
+  "href_id": "Q467756",
+  "title": "Stokes's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q487132",
+  "href_id": "Q487132",
+  "title": "Infinite monkey theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q488541",
+  "href_id": "Q488541",
+  "title": "Fisher separation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q495412",
+  "href_id": "Q495412",
+  "title": "Jordan–Schönflies theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q504843",
+  "href_id": "Q504843",
+  "title": "Mycielski's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q512897",
+  "href_id": "Q512897",
+  "title": "Brooks's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q523832",
+  "href_id": "Q523832",
+  "title": "Carathéodory–Jacobi–Lie theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q523876",
+  "href_id": "Q523876",
+  "title": "Spin–statistics theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q528955",
+  "href_id": "Q528955",
+  "title": "Kochen–Specker theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q528987",
+  "href_id": "Q528987",
+  "title": "Von Neumann bicommutant theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q535366",
+  "href_id": "Q535366",
+  "title": "Montel's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q544292",
+  "href_id": "Q544292",
+  "title": "Lagrange inversion theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q544369",
+  "href_id": "Q544369",
+  "title": "Glivenko–Cantelli theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q552367",
+  "href_id": "Q552367",
+  "title": "Berge's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q567843",
+  "href_id": "Q567843",
+  "title": "Hahn–Mazurkiewicz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q578555",
+  "href_id": "Q578555",
+  "title": "Noether's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q579515",
+  "href_id": "Q579515",
+  "title": "Rao–Blackwell theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q586051",
+  "href_id": "Q586051",
+  "title": "Haag–Łopuszański–Sohnius theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q587081",
+  "href_id": "Q587081",
+  "title": "Kolmogorov–Arnold–Moser theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q594571",
+  "href_id": "Q594571",
+  "title": "Van Aubel's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q599876",
+  "href_id": "Q599876",
+  "title": "Cochran's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q608294",
+  "href_id": "Q608294",
+  "title": "Max flow min cut theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q612021",
+  "href_id": "Q612021",
+  "title": "Gibbard–Satterthwaite theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q617417",
+  "href_id": "Q617417",
+  "title": "Isoperimetric theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q620602",
+  "href_id": "Q620602",
+  "title": "Virial theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q631561",
+  "href_id": "Q631561",
+  "title": "Closed range theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q632546X",
+  "href_id": "Q632546X",
+  "title": "Sylvester's theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q637418",
+  "href_id": "Q637418",
+  "title": "Napoleon's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q643513",
+  "href_id": "Q643513",
+  "title": "Riesz–Fischer theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q646523",
+  "href_id": "Q646523",
+  "title": "Pick's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q649469",
+  "href_id": "Q649469",
+  "title": "Modularity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q649977",
+  "href_id": "Q649977",
+  "title": "Shirshov–Cohn theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q650738",
+  "href_id": "Q650738",
+  "title": "Folk theorem (game theory)",
+  "suffix": ""
+ },
+ {
+  "id": "Q651593",
+  "href_id": "Q651593",
+  "title": "Norton's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q656176",
+  "href_id": "Q656176",
+  "title": "Schauder fixed-point theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q657469",
+  "href_id": "Q657469",
+  "title": "Lefschetz fixed-point theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q657469X",
+  "href_id": "Q657469X",
+  "title": "Lefschetz–Hopf theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q657903",
+  "href_id": "Q657903",
+  "title": "Hilbert–Waring theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q671663",
+  "href_id": "Q671663",
+  "title": "Coleman–Mandula theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q676413",
+  "href_id": "Q676413",
+  "title": "Dandelin's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q679800",
+  "href_id": "Q679800",
+  "title": "Nyquist–Shannon sampling theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q681406",
+  "href_id": "Q681406",
+  "title": "Euler's rotation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q685437",
+  "href_id": "Q685437",
+  "title": "Titchmarsh theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q693083",
+  "href_id": "Q693083",
+  "title": "Soundness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q719966",
+  "href_id": "Q719966",
+  "title": "Toda's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q721695",
+  "href_id": "Q721695",
+  "title": "Szemerédi–Trotter theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q729359",
+  "href_id": "Q729359",
+  "title": "Hadamard three-circle theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q730222",
+  "href_id": "Q730222",
+  "title": "Ham sandwich theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q733081",
+  "href_id": "Q733081",
+  "title": "Impossibility of angle trisection",
+  "suffix": ""
+ },
+ {
+  "id": "Q737851",
+  "href_id": "Q737851",
+  "title": "Banach–Tarski theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q737892",
+  "href_id": "Q737892",
+  "title": "Bendixson–Dulac theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q740093",
+  "href_id": "Q740093",
+  "title": "Peano existence theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q742833",
+  "href_id": "Q742833",
+  "title": "Gauss–Bonnet theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q744440",
+  "href_id": "Q744440",
+  "title": "Immerman–Szelepcsényi theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q751120",
+  "href_id": "Q751120",
+  "title": "Thue–Siegel–Roth theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q755986",
+  "href_id": "Q755986",
+  "title": "Atiyah–Bott fixed-point theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q755991",
+  "href_id": "Q755991",
+  "title": "Atiyah–Singer index theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q766722",
+  "href_id": "Q766722",
+  "title": "Liouville's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q777924",
+  "href_id": "Q777924",
+  "title": "Tijdeman's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q779220",
+  "href_id": "Q779220",
+  "title": "Hilbert's syzygy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q780763",
+  "href_id": "Q780763",
+  "title": "15 and 290 theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q784049",
+  "href_id": "Q784049",
+  "title": "Blaschke selection theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q790236",
+  "href_id": "Q790236",
+  "title": "Baranyai's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q791258",
+  "href_id": "Q791258",
+  "title": "Basu's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q794269",
+  "href_id": "Q794269",
+  "title": "Betti's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q828284",
+  "href_id": "Q828284",
+  "title": "Parallel axis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q830124",
+  "href_id": "Q830124",
+  "title": "Girsanov's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q830513",
+  "href_id": "Q830513",
+  "title": "Residue theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q834025",
+  "href_id": "Q834025",
+  "title": "Cauchy integral theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q834211",
+  "href_id": "Q834211",
+  "title": "Wallace–Bolyai–Gerwien theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q837551",
+  "href_id": "Q837551",
+  "title": "Frobenius theorem (differential topology)",
+  "suffix": ""
+ },
+ {
+  "id": "Q841893",
+  "href_id": "Q841893",
+  "title": "Desargues's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q844612",
+  "href_id": "Q844612",
+  "title": "Brun's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q845088",
+  "href_id": "Q845088",
+  "title": "Pappus's centroid theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q846840",
+  "href_id": "Q846840",
+  "title": "Erdős–Kac theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q848092",
+  "href_id": "Q848092",
+  "title": "Borsuk–Ulam theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q848810",
+  "href_id": "Q848810",
+  "title": "Kronecker's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q850495",
+  "href_id": "Q850495",
+  "title": "Wick's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q851166",
+  "href_id": "Q851166",
+  "title": "Pappus's hexagon theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q852183",
+  "href_id": "Q852183",
+  "title": "Viviani's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q852973",
+  "href_id": "Q852973",
+  "title": "Euler's polyhedron theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q856032",
+  "href_id": "Q856032",
+  "title": "CAP theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q856158",
+  "href_id": "Q856158",
+  "title": "Midy's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q857089",
+  "href_id": "Q857089",
+  "title": "de Branges's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q858978",
+  "href_id": "Q858978",
+  "title": "Castigliano's first and second theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q865665",
+  "href_id": "Q865665",
+  "title": "Birkhoff's theorem (relativity)",
+  "suffix": ""
+ },
+ {
+  "id": "Q867141",
+  "href_id": "Q867141",
+  "title": "Ehresmann's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q867839",
+  "href_id": "Q867839",
+  "title": "Rosser's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q890875",
+  "href_id": "Q890875",
+  "title": "Bohr–van Leeuwen theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q897769",
+  "href_id": "Q897769",
+  "title": "Kőnig's theorem (graph theory)",
+  "suffix": ""
+ },
+ {
+  "id": "Q899002",
+  "href_id": "Q899002",
+  "title": "Pascal's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q899853",
+  "href_id": "Q899853",
+  "title": "H-theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q900831",
+  "href_id": "Q900831",
+  "title": "Fluctuation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q902052",
+  "href_id": "Q902052",
+  "title": "Gödel's completeness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q902618",
+  "href_id": "Q902618",
+  "title": "Floquet's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q906809",
+  "href_id": "Q906809",
+  "title": "Hellmann–Feynman theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q909517",
+  "href_id": "Q909517",
+  "title": "Feit–Thompson theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q913447",
+  "href_id": "Q913447",
+  "title": "Morley's trisector theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q913849",
+  "href_id": "Q913849",
+  "title": "Minimax theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q915474",
+  "href_id": "Q915474",
+  "title": "Robin's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q922012",
+  "href_id": "Q922012",
+  "title": "Green–Tao theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q922367",
+  "href_id": "Q922367",
+  "title": "Master theorem (analysis of algorithms)",
+  "suffix": ""
+ },
+ {
+  "id": "Q925224",
+  "href_id": "Q925224",
+  "title": "Sonnenschein–Mantel–Debreu Theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q925854",
+  "href_id": "Q925854",
+  "title": "Angle bisector theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q928813",
+  "href_id": "Q928813",
+  "title": "Menger's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q929547",
+  "href_id": "Q929547",
+  "title": "Myers theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q931001X",
+  "href_id": "Q931001X",
+  "title": "Constant rank theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q931404",
+  "href_id": "Q931404",
+  "title": "Bertrand–Diquet–Puiseux theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q942046",
+  "href_id": "Q942046",
+  "title": "Schwarz–Ahlfors–Pick theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q951327",
+  "href_id": "Q951327",
+  "title": "Pasch's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q953062",
+  "href_id": "Q953062",
+  "title": "Reynolds transport theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q954210",
+  "href_id": "Q954210",
+  "title": "Savitch's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q965294",
+  "href_id": "Q965294",
+  "title": "Thabit ibn Qurra's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q966837",
+  "href_id": "Q966837",
+  "title": "Cramér–Wold theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q973359",
+  "href_id": "Q973359",
+  "title": "Radó's theorem (harmonic functions)",
+  "suffix": ""
+ },
+ {
+  "id": "Q974405",
+  "href_id": "Q974405",
+  "title": "Hille–Yosida theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q976033",
+  "href_id": "Q976033",
+  "title": "Gelfond–Schneider theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q977912",
+  "href_id": "Q977912",
+  "title": "Stolper–Samuelson theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q985009",
+  "href_id": "Q985009",
+  "title": "Helmholtz's theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q994401",
+  "href_id": "Q994401",
+  "title": "Four-vertex theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q995926",
+  "href_id": "Q995926",
+  "title": "Perpendicular axis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q999783",
+  "href_id": "Q999783",
+  "title": "Buckingham π theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1037559",
+  "href_id": "Q1037559",
+  "title": "Pólya enumeration theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1046232",
+  "href_id": "Q1046232",
+  "title": "Szemerédi's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1048589",
+  "href_id": "Q1048589",
+  "title": "Hohenberg–Kohn theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q1048874",
+  "href_id": "Q1048874",
+  "title": "Gauss's Theorema Egregium",
+  "suffix": ""
+ },
+ {
+  "id": "Q1050037",
+  "href_id": "Q1050037",
+  "title": "Coase theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1051404",
+  "href_id": "Q1051404",
+  "title": "Cesàro's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1052021",
+  "href_id": "Q1052021",
+  "title": "Craig's interpolation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1052752",
+  "href_id": "Q1052752",
+  "title": "Stolz–Cesàro theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1054106",
+  "href_id": "Q1054106",
+  "title": "Cox's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1056283",
+  "href_id": "Q1056283",
+  "title": "May's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1058662",
+  "href_id": "Q1058662",
+  "title": "Darboux's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1059151",
+  "href_id": "Q1059151",
+  "title": "FWL theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1064471",
+  "href_id": "Q1064471",
+  "title": "Earnshaw's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1068385",
+  "href_id": "Q1068385",
+  "title": "Clairaut's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1075398",
+  "href_id": "Q1075398",
+  "title": "Jung's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1076274",
+  "href_id": "Q1076274",
+  "title": "Choquet–Bishop–de Leeuw theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1077741",
+  "href_id": "Q1077741",
+  "title": "Hairy ball theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1095330",
+  "href_id": "Q1095330",
+  "title": "Apéry's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1103054",
+  "href_id": "Q1103054",
+  "title": "Lions–Lax–Milgram theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1119094",
+  "href_id": "Q1119094",
+  "title": "Paley–Wiener theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1121027",
+  "href_id": "Q1121027",
+  "title": "Krylov–Bogolyubov theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1125462",
+  "href_id": "Q1125462",
+  "title": "Dinostratus' theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1129636",
+  "href_id": "Q1129636",
+  "title": "Lehmann–Scheffé theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1130846",
+  "href_id": "Q1130846",
+  "title": "Ladner's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1131601",
+  "href_id": "Q1131601",
+  "title": "Sklar's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1134296",
+  "href_id": "Q1134296",
+  "title": "Supporting hyperplane theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1135706",
+  "href_id": "Q1135706",
+  "title": "Harnack's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1136043",
+  "href_id": "Q1136043",
+  "title": "Hurwitz's theorem (complex analysis)",
+  "suffix": ""
+ },
+ {
+  "id": "Q1136262",
+  "href_id": "Q1136262",
+  "title": "Optical theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1139430",
+  "href_id": "Q1139430",
+  "title": "Hurwitz's theorem (normed division algebras)",
+  "suffix": ""
+ },
+ {
+  "id": "Q1139524",
+  "href_id": "Q1139524",
+  "title": "Rationality theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1140200",
+  "href_id": "Q1140200",
+  "title": "PCP theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1141747",
+  "href_id": "Q1141747",
+  "title": "Carnot's theorem (inradius, circumradius)",
+  "suffix": ""
+ },
+ {
+  "id": "Q1143540",
+  "href_id": "Q1143540",
+  "title": "Heckscher–Ohlin theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1146791",
+  "href_id": "Q1146791",
+  "title": "Fermat polygonal number theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1149185X",
+  "href_id": "Q1149185X",
+  "title": "Kirby–Paris theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q1149185",
+  "href_id": "Q1149185",
+  "title": "Goodstein's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1149522",
+  "href_id": "Q1149522",
+  "title": "Lami's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1152521",
+  "href_id": "Q1152521",
+  "title": "Mohr–Mascheroni theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1153441",
+  "href_id": "Q1153441",
+  "title": "Goldstone's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1166774",
+  "href_id": "Q1166774",
+  "title": "Stone's representation theorem for Boolean algebras",
+  "suffix": ""
+ },
+ {
+  "id": "Q1177508",
+  "href_id": "Q1177508",
+  "title": "Rédei's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1179446",
+  "href_id": "Q1179446",
+  "title": "De Rham's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1182249",
+  "href_id": "Q1182249",
+  "title": "Deduction theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1186134",
+  "href_id": "Q1186134",
+  "title": "Poncelet–Steiner theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1188048",
+  "href_id": "Q1188048",
+  "title": "Barbier's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1188504",
+  "href_id": "Q1188504",
+  "title": "Pitman–Koopman–Darmois theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1191862",
+  "href_id": "Q1191862",
+  "title": "Rouché's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1196538",
+  "href_id": "Q1196538",
+  "title": "Descartes's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1196729",
+  "href_id": "Q1196729",
+  "title": "Mertens's theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q1202608",
+  "href_id": "Q1202608",
+  "title": "De Gua's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1209546",
+  "href_id": "Q1209546",
+  "title": "Kaplansky density theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1227061",
+  "href_id": "Q1227061",
+  "title": "Khinchin's theorem on Diophantine approximations",
+  "suffix": ""
+ },
+ {
+  "id": "Q1242398",
+  "href_id": "Q1242398",
+  "title": "Doob decomposition theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1249069",
+  "href_id": "Q1249069",
+  "title": "Richardson's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1276318",
+  "href_id": "Q1276318",
+  "title": "Schwartz kernel theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1305766",
+  "href_id": "Q1305766",
+  "title": "Poincaré–Hopf theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1306092",
+  "href_id": "Q1306092",
+  "title": "Nash embedding theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1307676",
+  "href_id": "Q1307676",
+  "title": "Künneth theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1315949",
+  "href_id": "Q1315949",
+  "title": "Mittag-Leffler's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1317350",
+  "href_id": "Q1317350",
+  "title": "Chen's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1317367",
+  "href_id": "Q1317367",
+  "title": "Japanese theorem for concyclic polygons",
+  "suffix": ""
+ },
+ {
+  "id": "Q1322892",
+  "href_id": "Q1322892",
+  "title": "Dirac's theorem on chordal graphs",
+  "suffix": ""
+ },
+ {
+  "id": "Q1330788",
+  "href_id": "Q1330788",
+  "title": "Weierstrass factorization theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1340623",
+  "href_id": "Q1340623",
+  "title": "Classification of finite simple groups",
+  "suffix": ""
+ },
+ {
+  "id": "Q1347094",
+  "href_id": "Q1347094",
+  "title": "Alternate Interior Angles Theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1348736",
+  "href_id": "Q1348736",
+  "title": "Rybczynski theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1349282",
+  "href_id": "Q1349282",
+  "title": "Eilenberg–Zilber theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1361031",
+  "href_id": "Q1361031",
+  "title": "Frobenius theorem (real division algebras)",
+  "suffix": ""
+ },
+ {
+  "id": "Q1361393",
+  "href_id": "Q1361393",
+  "title": "Luzin's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1366581",
+  "href_id": "Q1366581",
+  "title": "Erdős–Rado theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1369453",
+  "href_id": "Q1369453",
+  "title": "Kronecker–Weber theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1370316",
+  "href_id": "Q1370316",
+  "title": "Casey's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1376515",
+  "href_id": "Q1376515",
+  "title": "No-hair theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1396592",
+  "href_id": "Q1396592",
+  "title": "Franel–Landau theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1420905",
+  "href_id": "Q1420905",
+  "title": "Hilbert's theorem 90",
+  "suffix": ""
+ },
+ {
+  "id": "Q1422083",
+  "href_id": "Q1422083",
+  "title": "Ryll-Nardzewski fixed-point theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1423818",
+  "href_id": "Q1423818",
+  "title": "Euler's theorem in geometry",
+  "suffix": ""
+ },
+ {
+  "id": "Q1424481",
+  "href_id": "Q1424481",
+  "title": "Frucht's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1425077",
+  "href_id": "Q1425077",
+  "title": "Spectral theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1425308",
+  "href_id": "Q1425308",
+  "title": "Brahmagupta theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1425529",
+  "href_id": "Q1425529",
+  "title": "Chebotarev's density theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1434158",
+  "href_id": "Q1434158",
+  "title": "Fluctuation dissipation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1434805",
+  "href_id": "Q1434805",
+  "title": "Max Noether's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1452678",
+  "href_id": "Q1452678",
+  "title": "Penrose–Hawking singularity theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q1455794",
+  "href_id": "Q1455794",
+  "title": "Freudenthal suspension theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1505529",
+  "href_id": "Q1505529",
+  "title": "Runge's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1529941",
+  "href_id": "Q1529941",
+  "title": "Peter–Weyl theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1530275",
+  "href_id": "Q1530275",
+  "title": "Dunford–Pettis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1542114",
+  "href_id": "Q1542114",
+  "title": "Bézout's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1543149",
+  "href_id": "Q1543149",
+  "title": "Sokhotski–Plemelj theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1547975",
+  "href_id": "Q1547975",
+  "title": "Mermin–Wagner theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1555342",
+  "href_id": "Q1555342",
+  "title": "Reeh–Schlieder theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1564541",
+  "href_id": "Q1564541",
+  "title": "Perron–Frobenius theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1566372",
+  "href_id": "Q1566372",
+  "title": "Haag's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1568612",
+  "href_id": "Q1568612",
+  "title": "Marden's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1572474",
+  "href_id": "Q1572474",
+  "title": "Lindemann–Weierstrass theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1576235",
+  "href_id": "Q1576235",
+  "title": "Lochs's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1602819",
+  "href_id": "Q1602819",
+  "title": "Lumer–Phillips theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1614464",
+  "href_id": "Q1614464",
+  "title": "Cauchy–Kowalevski theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1621180",
+  "href_id": "Q1621180",
+  "title": "Orlicz–Pettis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1630588",
+  "href_id": "Q1630588",
+  "title": "Hurwitz's theorem (number theory)",
+  "suffix": ""
+ },
+ {
+  "id": "Q1631749",
+  "href_id": "Q1631749",
+  "title": "Lester's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1631992",
+  "href_id": "Q1631992",
+  "title": "Steiner–Lehmus theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1632301",
+  "href_id": "Q1632301",
+  "title": "Sturm's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1637085",
+  "href_id": "Q1637085",
+  "title": "Poynting's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1660147",
+  "href_id": "Q1660147",
+  "title": "Mazur–Ulam theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1668861",
+  "href_id": "Q1668861",
+  "title": "Picard theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1683356",
+  "href_id": "Q1683356",
+  "title": "Japanese theorem for concyclic quadrilaterals",
+  "suffix": ""
+ },
+ {
+  "id": "Q1694565",
+  "href_id": "Q1694565",
+  "title": "Vinogradov's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1699024",
+  "href_id": "Q1699024",
+  "title": "John ellipsoid",
+  "suffix": ""
+ },
+ {
+  "id": "Q1704878",
+  "href_id": "Q1704878",
+  "title": "Appell–Humbert theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1716166",
+  "href_id": "Q1716166",
+  "title": "Mercer's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1720410",
+  "href_id": "Q1720410",
+  "title": "Hjelmslev's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1724049",
+  "href_id": "Q1724049",
+  "title": "Wolstenholme's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1739994",
+  "href_id": "Q1739994",
+  "title": "Brauer–Suzuki theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1751105",
+  "href_id": "Q1751105",
+  "title": "Blum's speedup theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1751823",
+  "href_id": "Q1751823",
+  "title": "No-cloning theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1752516",
+  "href_id": "Q1752516",
+  "title": "Riemann series theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1752988",
+  "href_id": "Q1752988",
+  "title": "Kutta–Joukowski theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1756194",
+  "href_id": "Q1756194",
+  "title": "Shannon–Hartley theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1765521",
+  "href_id": "Q1765521",
+  "title": "Doob's martingale convergence theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q1785610",
+  "href_id": "Q1785610",
+  "title": "Poncelet's closure theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1785872",
+  "href_id": "Q1785872",
+  "title": "Berry–Esséen theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1786292",
+  "href_id": "Q1786292",
+  "title": "Schur's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1786419",
+  "href_id": "Q1786419",
+  "title": "Kramers' theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1789863",
+  "href_id": "Q1789863",
+  "title": "Routh's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1809539",
+  "href_id": "Q1809539",
+  "title": "Pizza theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1841237",
+  "href_id": "Q1841237",
+  "title": "Fubini's theorem on differentiation",
+  "suffix": ""
+ },
+ {
+  "id": "Q1855610",
+  "href_id": "Q1855610",
+  "title": "Theorem of de Moivre–Laplace",
+  "suffix": ""
+ },
+ {
+  "id": "Q1888583",
+  "href_id": "Q1888583",
+  "title": "Holditch's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1899432",
+  "href_id": "Q1899432",
+  "title": "Grothendieck–Hirzebruch–Riemann–Roch theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1914905",
+  "href_id": "Q1914905",
+  "title": "Ramanujan–Skolem's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1930577",
+  "href_id": "Q1930577",
+  "title": "Herbrand's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1938251",
+  "href_id": "Q1938251",
+  "title": "Hasse–Minkowski theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1946642X",
+  "href_id": "Q1946642X",
+  "title": "S–cobordism theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q1946642",
+  "href_id": "Q1946642",
+  "title": "H-cobordism theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1964537",
+  "href_id": "Q1964537",
+  "title": "Mergelyan's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1974087",
+  "href_id": "Q1974087",
+  "title": "Riemann's theorem on removable singularities",
+  "suffix": ""
+ },
+ {
+  "id": "Q1995468",
+  "href_id": "Q1995468",
+  "title": "Hölder's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q1996305",
+  "href_id": "Q1996305",
+  "title": "Burnside's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2000090",
+  "href_id": "Q2000090",
+  "title": "Art gallery theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2008549",
+  "href_id": "Q2008549",
+  "title": "Hilbert's theorem (differential geometry)",
+  "suffix": ""
+ },
+ {
+  "id": "Q2013213",
+  "href_id": "Q2013213",
+  "title": "Reuschle's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2022775",
+  "href_id": "Q2022775",
+  "title": "Hilbert–Schmidt theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2028341",
+  "href_id": "Q2028341",
+  "title": "Ado's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2046647",
+  "href_id": "Q2046647",
+  "title": "Karhunen–Loève theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2063099",
+  "href_id": "Q2063099",
+  "title": "Poincaré duality theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2068227",
+  "href_id": "Q2068227",
+  "title": "Artin–Schreier theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2071632",
+  "href_id": "Q2071632",
+  "title": "Rouché–Capelli theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2094241",
+  "href_id": "Q2094241",
+  "title": "Hopf–Rinow theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2109761",
+  "href_id": "Q2109761",
+  "title": "Uniformization theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2120067",
+  "href_id": "Q2120067",
+  "title": "Diller–Dress theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2190744",
+  "href_id": "Q2190744",
+  "title": "Feuerbach's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2197859",
+  "href_id": "Q2197859",
+  "title": "Nicomachus's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2222575",
+  "href_id": "Q2222575",
+  "title": "Shell theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226602",
+  "href_id": "Q2226602",
+  "title": "Bauer–Fike theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226606",
+  "href_id": "Q2226606",
+  "title": "Beckman–Quarles theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226610",
+  "href_id": "Q2226610",
+  "title": "Banach–Mazur theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226624",
+  "href_id": "Q2226624",
+  "title": "Bruck–Chowla–Ryser theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226640",
+  "href_id": "Q2226640",
+  "title": "Cramér’s decomposition theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226644",
+  "href_id": "Q2226644",
+  "title": "Easton's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226650",
+  "href_id": "Q2226650",
+  "title": "Eberlein–Šmulian theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226682",
+  "href_id": "Q2226682",
+  "title": "Gelfand–Naimark theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226691",
+  "href_id": "Q2226691",
+  "title": "Kirchhoff's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226695",
+  "href_id": "Q2226695",
+  "title": "Hurwitz's automorphisms theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226698",
+  "href_id": "Q2226698",
+  "title": "Kantorovich theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226709",
+  "href_id": "Q2226709",
+  "title": "Krull–Schmidt theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226750",
+  "href_id": "Q2226750",
+  "title": "Malgrange–Ehrenpreis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226774",
+  "href_id": "Q2226774",
+  "title": "König's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226803",
+  "href_id": "Q2226803",
+  "title": "Tennenbaum's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226807",
+  "href_id": "Q2226807",
+  "title": "Vantieghem's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2226962",
+  "href_id": "Q2226962",
+  "title": "Weierstrass–Casorati theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2269888",
+  "href_id": "Q2269888",
+  "title": "Cohn's irreducibility criterion",
+  "suffix": ""
+ },
+ {
+  "id": "Q2270905",
+  "href_id": "Q2270905",
+  "title": "Poincaré–Birkhoff–Witt theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2277040",
+  "href_id": "Q2277040",
+  "title": "Shannon's expansion theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2287393",
+  "href_id": "Q2287393",
+  "title": "Caristi fixed-point theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2309682",
+  "href_id": "Q2309682",
+  "title": "Sphere theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2309760",
+  "href_id": "Q2309760",
+  "title": "Looman–Menchoff theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2310718",
+  "href_id": "Q2310718",
+  "title": "Pitot theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2338929",
+  "href_id": "Q2338929",
+  "title": "Exchange theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2345282",
+  "href_id": "Q2345282",
+  "title": "Shannon's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2347139",
+  "href_id": "Q2347139",
+  "title": "Carnot's theorem (thermodynamics)",
+  "suffix": ""
+ },
+ {
+  "id": "Q2360531",
+  "href_id": "Q2360531",
+  "title": "Jordan–Schur theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2374733",
+  "href_id": "Q2374733",
+  "title": "Skolem–Mahler–Lech theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2376918",
+  "href_id": "Q2376918",
+  "title": "Abelian and Tauberian theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q2378270",
+  "href_id": "Q2378270",
+  "title": "Thue's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2379128",
+  "href_id": "Q2379128",
+  "title": "Lindström's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2394548",
+  "href_id": "Q2394548",
+  "title": "Hurewicz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2411312",
+  "href_id": "Q2411312",
+  "title": "Shannon's source coding theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2428364",
+  "href_id": "Q2428364",
+  "title": "Clausius theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2449984",
+  "href_id": "Q2449984",
+  "title": "Miquel's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2449984X",
+  "href_id": "Q2449984X",
+  "title": "Pivot theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q2473965",
+  "href_id": "Q2473965",
+  "title": "Ugly duckling theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2478371",
+  "href_id": "Q2478371",
+  "title": "Envelope theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2482753",
+  "href_id": "Q2482753",
+  "title": "Mann's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2495664",
+  "href_id": "Q2495664",
+  "title": "Universal coefficient theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2500406",
+  "href_id": "Q2500406",
+  "title": "Liénard's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2500408",
+  "href_id": "Q2500408",
+  "title": "Thébault's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2518048",
+  "href_id": "Q2518048",
+  "title": "Kodaira vanishing theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2524990",
+  "href_id": "Q2524990",
+  "title": "Jackson's theorem (queueing theory)",
+  "suffix": ""
+ },
+ {
+  "id": "Q2533936",
+  "href_id": "Q2533936",
+  "title": "Descartes's theorem on total angular defect",
+  "suffix": ""
+ },
+ {
+  "id": "Q2540738",
+  "href_id": "Q2540738",
+  "title": "Cartan–Dieudonné theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2558669",
+  "href_id": "Q2558669",
+  "title": "Artin–Zorn theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2588432",
+  "href_id": "Q2588432",
+  "title": "Wold's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2600653",
+  "href_id": "Q2600653",
+  "title": "Taylor–Proudman theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2607007",
+  "href_id": "Q2607007",
+  "title": "Hinge theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2621667",
+  "href_id": "Q2621667",
+  "title": "Nagata–Smirnov metrization theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2635326",
+  "href_id": "Q2635326",
+  "title": "Structured program theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2638931",
+  "href_id": "Q2638931",
+  "title": "Convolution theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2703389",
+  "href_id": "Q2703389",
+  "title": "Linnik's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2733672",
+  "href_id": "Q2733672",
+  "title": "Price's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2734084",
+  "href_id": "Q2734084",
+  "title": "Bohr–Mollerup theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2793600",
+  "href_id": "Q2793600",
+  "title": "Stark–Heegner theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2799491",
+  "href_id": "Q2799491",
+  "title": "Ringel–Youngs theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2800071",
+  "href_id": "Q2800071",
+  "title": "Perfect graph theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2862403",
+  "href_id": "Q2862403",
+  "title": "Schneider–Lang theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2893695",
+  "href_id": "Q2893695",
+  "title": "Unmixedness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2916568",
+  "href_id": "Q2916568",
+  "title": "Gomory's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2981012",
+  "href_id": "Q2981012",
+  "title": "Monge's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2984415",
+  "href_id": "Q2984415",
+  "title": "Hajnal–Szemerédi theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2993026",
+  "href_id": "Q2993026",
+  "title": "Ankeny–Artin–Chowla theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2993308",
+  "href_id": "Q2993308",
+  "title": "Cameron–Erdős theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2993319",
+  "href_id": "Q2993319",
+  "title": "Mirsky–Newman theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q2995691",
+  "href_id": "Q2995691",
+  "title": "Newlander–Nirenberg theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3001796",
+  "href_id": "Q3001796",
+  "title": "Skolem–Noether theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3007384",
+  "href_id": "Q3007384",
+  "title": "Post's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3075250",
+  "href_id": "Q3075250",
+  "title": "Hardy–Littlewood maximal theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3077634",
+  "href_id": "Q3077634",
+  "title": "Sahlqvist correspondence theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3088644",
+  "href_id": "Q3088644",
+  "title": "Goldstine theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3154003",
+  "href_id": "Q3154003",
+  "title": "Le Cam's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3180727",
+  "href_id": "Q3180727",
+  "title": "Perlis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3345678",
+  "href_id": "Q3345678",
+  "title": "Moore–Aronszajn theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3424029",
+  "href_id": "Q3424029",
+  "title": "Chasles's theorem (disambiguation)",
+  "suffix": ""
+ },
+ {
+  "id": "Q3443426",
+  "href_id": "Q3443426",
+  "title": "Bondy's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3458641",
+  "href_id": "Q3458641",
+  "title": "Szegő limit theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q3502015",
+  "href_id": "Q3502015",
+  "title": "Hasse's theorem on elliptic curves",
+  "suffix": ""
+ },
+ {
+  "id": "Q3505260",
+  "href_id": "Q3505260",
+  "title": "Cayley–Salmon theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3526969",
+  "href_id": "Q3526969",
+  "title": "AF+BG theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3526976",
+  "href_id": "Q3526976",
+  "title": "Ax–Kochen theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3526982",
+  "href_id": "Q3526982",
+  "title": "Erdős–Anning theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3526990",
+  "href_id": "Q3526990",
+  "title": "Euler's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3526993",
+  "href_id": "Q3526993",
+  "title": "Takagi existence theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3526998",
+  "href_id": "Q3526998",
+  "title": "Excision theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527004",
+  "href_id": "Q3527004",
+  "title": "BEST theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527008",
+  "href_id": "Q3527008",
+  "title": "Balian–Low theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527009",
+  "href_id": "Q3527009",
+  "title": "Baker's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527011",
+  "href_id": "Q3527011",
+  "title": "Beck's theorem (geometry)",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527015",
+  "href_id": "Q3527015",
+  "title": "Bernstein's theorem on monotone functions",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527017",
+  "href_id": "Q3527017",
+  "title": "Beurling–Lax theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527019",
+  "href_id": "Q3527019",
+  "title": "Birch's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527034",
+  "href_id": "Q3527034",
+  "title": "Cauchy's theorem (geometry)",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527040",
+  "href_id": "Q3527040",
+  "title": "Chomsky–Schützenberger representation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527044",
+  "href_id": "Q3527044",
+  "title": "Pappus's area theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527054",
+  "href_id": "Q3527054",
+  "title": "De Bruijn–Erdős theorem (graph theory)",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527056",
+  "href_id": "Q3527056",
+  "title": "De Bruijn–Erdős theorem (incidence geometry)",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527064",
+  "href_id": "Q3527064",
+  "title": "Donsker's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527067",
+  "href_id": "Q3527067",
+  "title": "F. and M. Riesz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527071",
+  "href_id": "Q3527071",
+  "title": "Fáry–Milnor theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527079",
+  "href_id": "Q3527079",
+  "title": "Freiman's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527088",
+  "href_id": "Q3527088",
+  "title": "Haboush's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527091",
+  "href_id": "Q3527091",
+  "title": "Gromov's theorem on groups of polynomial growth",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527093",
+  "href_id": "Q3527093",
+  "title": "Hilbert–Speiser theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527095",
+  "href_id": "Q3527095",
+  "title": "Jacobi's four-square theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527100",
+  "href_id": "Q3527100",
+  "title": "Kruskal's tree theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527110",
+  "href_id": "Q3527110",
+  "title": "Lax–Wendroff theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527113",
+  "href_id": "Q3527113",
+  "title": "Lie–Kolchin theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527125",
+  "href_id": "Q3527125",
+  "title": "Monsky's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527129",
+  "href_id": "Q3527129",
+  "title": "Müntz–Szász theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527132",
+  "href_id": "Q3527132",
+  "title": "Nagell–Lutz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527155",
+  "href_id": "Q3527155",
+  "title": "Robertson–Seymour theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527162",
+  "href_id": "Q3527162",
+  "title": "Sophie Germain's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527171",
+  "href_id": "Q3527171",
+  "title": "Synge's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527185",
+  "href_id": "Q3527185",
+  "title": "Whitehead theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527196",
+  "href_id": "Q3527196",
+  "title": "Principal ideal theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527209",
+  "href_id": "Q3527209",
+  "title": "Hasse norm theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527214",
+  "href_id": "Q3527214",
+  "title": "Non-squeezing theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527223",
+  "href_id": "Q3527223",
+  "title": "Crystallographic restriction theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527226",
+  "href_id": "Q3527226",
+  "title": "Linear speedup theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527233",
+  "href_id": "Q3527233",
+  "title": "Kolmogorov's three-series theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527245",
+  "href_id": "Q3527245",
+  "title": "Six exponentials theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527247",
+  "href_id": "Q3527247",
+  "title": "Six circles theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3527279",
+  "href_id": "Q3527279",
+  "title": "Wiener's tauberian theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3534036",
+  "href_id": "Q3534036",
+  "title": "Pompeiu's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3613173",
+  "href_id": "Q3613173",
+  "title": "Tits alternative",
+  "suffix": ""
+ },
+ {
+  "id": "Q3661294",
+  "href_id": "Q3661294",
+  "title": "Kelvin's circulation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3699212",
+  "href_id": "Q3699212",
+  "title": "Saint-Venant's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3711848",
+  "href_id": "Q3711848",
+  "title": "Sobolev embedding theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3757563",
+  "href_id": "Q3757563",
+  "title": "Intercept theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3771212",
+  "href_id": "Q3771212",
+  "title": "Proth's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3889376",
+  "href_id": "Q3889376",
+  "title": "Carmichael's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3893473",
+  "href_id": "Q3893473",
+  "title": "Tameness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3915398",
+  "href_id": "Q3915398",
+  "title": "Brunn–Minkowski theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3983968",
+  "href_id": "Q3983968",
+  "title": "Sturm–Picone comparison theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3983972",
+  "href_id": "Q3983972",
+  "title": "Simplicial approximation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3984011",
+  "href_id": "Q3984011",
+  "title": "Duggan–Schwartz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3984017",
+  "href_id": "Q3984017",
+  "title": "Helly's selection theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3984020",
+  "href_id": "Q3984020",
+  "title": "Holmström's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3984052",
+  "href_id": "Q3984052",
+  "title": "Equidistribution theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3984056",
+  "href_id": "Q3984056",
+  "title": "No-communication theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3984063",
+  "href_id": "Q3984063",
+  "title": "Mostow rigidity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q3984069",
+  "href_id": "Q3984069",
+  "title": "Fredholm's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4054114",
+  "href_id": "Q4054114",
+  "title": "ATS theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4171386",
+  "href_id": "Q4171386",
+  "title": "Soul theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4179283",
+  "href_id": "Q4179283",
+  "title": "Positive energy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4272300",
+  "href_id": "Q4272300",
+  "title": "Initial value theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4272645",
+  "href_id": "Q4272645",
+  "title": "Final value theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4378889",
+  "href_id": "Q4378889",
+  "title": "Carathéodory's theorem (conformal mapping)",
+  "suffix": ""
+ },
+ {
+  "id": "Q4408070",
+  "href_id": "Q4408070",
+  "title": "De Finetti's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454910",
+  "href_id": "Q4454910",
+  "title": "Ostrowski–Hadamard gap theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454919",
+  "href_id": "Q4454919",
+  "title": "Aumann's agreement theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454925",
+  "href_id": "Q4454925",
+  "title": "Edge-of-the-wedge theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454954",
+  "href_id": "Q4454954",
+  "title": "Kirszbraun theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454958",
+  "href_id": "Q4454958",
+  "title": "Min-max theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454973",
+  "href_id": "Q4454973",
+  "title": "Lindelöf's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454976",
+  "href_id": "Q4454976",
+  "title": "Liouville's theorem (conformal mappings)",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454989",
+  "href_id": "Q4454989",
+  "title": "Meusnier's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4454996",
+  "href_id": "Q4454996",
+  "title": "Novikov's compact leaf theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455003",
+  "href_id": "Q4455003",
+  "title": "Pomeranchuk's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455015",
+  "href_id": "Q4455015",
+  "title": "Routh–Hurwitz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455016",
+  "href_id": "Q4455016",
+  "title": "Reeb sphere theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455023",
+  "href_id": "Q4455023",
+  "title": "Sazonov's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455025",
+  "href_id": "Q4455025",
+  "title": "No wandering domain theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455030",
+  "href_id": "Q4455030",
+  "title": "Stone's theorem on one-parameter unitary groups",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455031",
+  "href_id": "Q4455031",
+  "title": "Fáry's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455033",
+  "href_id": "Q4455033",
+  "title": "Fatou's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455037",
+  "href_id": "Q4455037",
+  "title": "Hardy's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455043",
+  "href_id": "Q4455043",
+  "title": "Cayley–Bacharach theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4455046",
+  "href_id": "Q4455046",
+  "title": "Monodromy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4634017",
+  "href_id": "Q4634017",
+  "title": "2π theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4663326",
+  "href_id": "Q4663326",
+  "title": "Hirzebruch–Riemann–Roch theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4666729",
+  "href_id": "Q4666729",
+  "title": "Abel–Jacobi theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4666729X",
+  "href_id": "Q4666729X",
+  "title": "Abel's curve theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q4667501",
+  "href_id": "Q4667501",
+  "title": "Abhyankar–Moh theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4677985",
+  "href_id": "Q4677985",
+  "title": "Acyclic models theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4700718",
+  "href_id": "Q4700718",
+  "title": "Akhiezer's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4712316",
+  "href_id": "Q4712316",
+  "title": "Albert–Brauer–Hasse–Noether theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4713046",
+  "href_id": "Q4713046",
+  "title": "Alchian–Allen theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4724004B",
+  "href_id": "Q4724004B",
+  "title": "Riemann's existence theorem",
+  "suffix": "B"
+ },
+ {
+  "id": "Q4724004A",
+  "href_id": "Q4724004A",
+  "title": "Chow's theorem",
+  "suffix": "A"
+ },
+ {
+  "id": "Q4734002",
+  "href_id": "Q4734002",
+  "title": "Gromov–Ruh theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4734844",
+  "href_id": "Q4734844",
+  "title": "Alperin–Brauer–Gorenstein theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4736422",
+  "href_id": "Q4736422",
+  "title": "Denjoy–Luzin theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4746948",
+  "href_id": "Q4746948",
+  "title": "Amitsur–Levitzki theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4751110",
+  "href_id": "Q4751110",
+  "title": "Analyst's traveling salesman theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4751118",
+  "href_id": "Q4751118",
+  "title": "Analytic Fredholm theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4753992",
+  "href_id": "Q4753992",
+  "title": "Anderson's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4756099",
+  "href_id": "Q4756099",
+  "title": "Andreotti–Frankel theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4783822",
+  "href_id": "Q4783822",
+  "title": "Arithmetic Riemann–Roch theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4788680",
+  "href_id": "Q4788680",
+  "title": "Area theorem (conformal mapping)",
+  "suffix": ""
+ },
+ {
+  "id": "Q4801169",
+  "href_id": "Q4801169",
+  "title": "Artin approximation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4801183",
+  "href_id": "Q4801183",
+  "title": "Artin–Verdier duality theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4801563",
+  "href_id": "Q4801563",
+  "title": "Artstein's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4815879",
+  "href_id": "Q4815879",
+  "title": "Atiyah–Segal completion theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4815899",
+  "href_id": "Q4815899",
+  "title": "Atkinson's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4826848",
+  "href_id": "Q4826848",
+  "title": "Autonomous convergence theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4827308",
+  "href_id": "Q4827308",
+  "title": "Auxiliary polynomial theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4832965",
+  "href_id": "Q4832965",
+  "title": "Aztec diamond theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4838119",
+  "href_id": "Q4838119",
+  "title": "Babuška–Lax–Milgram theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4848497",
+  "href_id": "Q4848497",
+  "title": "Baily–Borel theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4853767",
+  "href_id": "Q4853767",
+  "title": "Banach–Stone theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4857506",
+  "href_id": "Q4857506",
+  "title": "Bapat–Beg theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4865980",
+  "href_id": "Q4865980",
+  "title": "Barwise compactness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4866385",
+  "href_id": "Q4866385",
+  "title": "Base change theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q4866385X",
+  "href_id": "Q4866385X",
+  "title": "Proper base change theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q4877965",
+  "href_id": "Q4877965",
+  "title": "Beauville–Laszlo theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4880958",
+  "href_id": "Q4880958",
+  "title": "Behnke–Stein theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4884789",
+  "href_id": "Q4884789",
+  "title": "Beltrami's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4884950",
+  "href_id": "Q4884950",
+  "title": "Belyi's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4891633",
+  "href_id": "Q4891633",
+  "title": "Berger–Kazdan comparison theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4894565",
+  "href_id": "Q4894565",
+  "title": "Bernstein's theorem (approximation theory)",
+  "suffix": ""
+ },
+ {
+  "id": "Q4914101",
+  "href_id": "Q4914101",
+  "title": "Bing's recognition theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4916483",
+  "href_id": "Q4916483",
+  "title": "Birkhoff–Grothendieck theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4918128",
+  "href_id": "Q4918128",
+  "title": "Bishop–Cannings theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4927458",
+  "href_id": "Q4927458",
+  "title": "Blondel's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4937691",
+  "href_id": "Q4937691",
+  "title": "Bogoliubov–Parasyuk theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4941364",
+  "href_id": "Q4941364",
+  "title": "Bondareva–Shapley theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4942215",
+  "href_id": "Q4942215",
+  "title": "Bonnet theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4944906",
+  "href_id": "Q4944906",
+  "title": "Borel determinacy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4944908",
+  "href_id": "Q4944908",
+  "title": "Borel fixed-point theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4944923",
+  "href_id": "Q4944923",
+  "title": "Borel–Bott–Weil theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4944923X",
+  "href_id": "Q4944923X",
+  "title": "Borel–Weil theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q4948983",
+  "href_id": "Q4948983",
+  "title": "Bott periodicity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4949984",
+  "href_id": "Q4949984",
+  "title": "Bounded inverse theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4956438",
+  "href_id": "Q4956438",
+  "title": "Branching theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4958218",
+  "href_id": "Q4958218",
+  "title": "Brauer's theorem on induced characters",
+  "suffix": ""
+ },
+ {
+  "id": "Q4958221",
+  "href_id": "Q4958221",
+  "title": "Brauer's three main theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q4958227",
+  "href_id": "Q4958227",
+  "title": "Brauer–Nesbitt theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4958230",
+  "href_id": "Q4958230",
+  "title": "Brauer–Siegel theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4958233",
+  "href_id": "Q4958233",
+  "title": "Brauer–Suzuki–Wall theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4975963",
+  "href_id": "Q4975963",
+  "title": "Brown's representability theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4979609",
+  "href_id": "Q4979609",
+  "title": "Brun–Titchmarsh theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4991415",
+  "href_id": "Q4991415",
+  "title": "Chowla–Mordell theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q4998912",
+  "href_id": "Q4998912",
+  "title": "Burke's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5001327",
+  "href_id": "Q5001327",
+  "title": "Busemann's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5005143",
+  "href_id": "Q5005143",
+  "title": "Bôcher's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5005965",
+  "href_id": "Q5005965",
+  "title": "C-theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5026435",
+  "href_id": "Q5026435",
+  "title": "Cameron–Martin theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5037752",
+  "href_id": "Q5037752",
+  "title": "Carathéodory's existence theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5041175",
+  "href_id": "Q5041175",
+  "title": "Carleson–Jacobs theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5042898",
+  "href_id": "Q5042898",
+  "title": "Carlson's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5047043",
+  "href_id": "Q5047043",
+  "title": "Cartan's theorems A and B",
+  "suffix": ""
+ },
+ {
+  "id": "Q5047046",
+  "href_id": "Q5047046",
+  "title": "Brauer–Cartan–Hua theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5047048",
+  "href_id": "Q5047048",
+  "title": "Cartan–Hadamard theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5047051",
+  "href_id": "Q5047051",
+  "title": "Cartan–Kuranishi prolongation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5047052",
+  "href_id": "Q5047052",
+  "title": "Cartan–Kähler theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5049717",
+  "href_id": "Q5049717",
+  "title": "Castelnuovo–de Franchis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5091194",
+  "href_id": "Q5091194",
+  "title": "Cheng's eigenvalue comparison theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5094298",
+  "href_id": "Q5094298",
+  "title": "Chevalley's structure theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5094305",
+  "href_id": "Q5094305",
+  "title": "Chevalley–Shephard–Todd theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5103861",
+  "href_id": "Q5103861",
+  "title": "Choi's theorem on completely positive maps",
+  "suffix": ""
+ },
+ {
+  "id": "Q5125859",
+  "href_id": "Q5125859",
+  "title": "Clapeyron's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5127710",
+  "href_id": "Q5127710",
+  "title": "Clark–Ocone theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5132839",
+  "href_id": "Q5132839",
+  "title": "Clifford's circle theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q5132840",
+  "href_id": "Q5132840",
+  "title": "Clifford's theorem on special divisors",
+  "suffix": ""
+ },
+ {
+  "id": "Q5136698",
+  "href_id": "Q5136698",
+  "title": "Cluster decomposition theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5139948",
+  "href_id": "Q5139948",
+  "title": "Codd's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5141331",
+  "href_id": "Q5141331",
+  "title": "Cohen structure theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5155090",
+  "href_id": "Q5155090",
+  "title": "Commutation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5157054",
+  "href_id": "Q5157054",
+  "title": "Compression theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5161245",
+  "href_id": "Q5161245",
+  "title": "Conley–Zehnder theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5163116",
+  "href_id": "Q5163116",
+  "title": "Conservativity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5166389",
+  "href_id": "Q5166389",
+  "title": "Van Vleck's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5172143",
+  "href_id": "Q5172143",
+  "title": "Corona theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5178114",
+  "href_id": "Q5178114",
+  "title": "Courcelle's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5180651",
+  "href_id": "Q5180651",
+  "title": "Craig's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5187911",
+  "href_id": "Q5187911",
+  "title": "Crooks fluctuation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5188510",
+  "href_id": "Q5188510",
+  "title": "Crossbar theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5195996",
+  "href_id": "Q5195996",
+  "title": "Curtis–Hedlund–Lyndon theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5221089",
+  "href_id": "Q5221089",
+  "title": "Danskin's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5242704",
+  "href_id": "Q5242704",
+  "title": "Dawson–Gärtner theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5244285",
+  "href_id": "Q5244285",
+  "title": "de Bruijn's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5244361",
+  "href_id": "Q5244361",
+  "title": "De Franchis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5251122",
+  "href_id": "Q5251122",
+  "title": "Time hierarchy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5252320",
+  "href_id": "Q5252320",
+  "title": "Lickorish twist theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5278348",
+  "href_id": "Q5278348",
+  "title": "Galvin's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5282059",
+  "href_id": "Q5282059",
+  "title": "Harish–Chandra theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5282247",
+  "href_id": "Q5282247",
+  "title": "Disintegration theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5295351",
+  "href_id": "Q5295351",
+  "title": "Donaldson's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5296972",
+  "href_id": "Q5296972",
+  "title": "Doob–Meyer decomposition theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5299605",
+  "href_id": "Q5299605",
+  "title": "Glivenko's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5311783",
+  "href_id": "Q5311783",
+  "title": "Dudley's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5315060",
+  "href_id": "Q5315060",
+  "title": "Dunford–Schwartz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5319505",
+  "href_id": "Q5319505",
+  "title": "Zeilberger–Bressoud theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5337931",
+  "href_id": "Q5337931",
+  "title": "Edgeworth's limit theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5362000",
+  "href_id": "Q5362000",
+  "title": "Elitzur's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5384150",
+  "href_id": "Q5384150",
+  "title": "Equal incircles theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5385323",
+  "href_id": "Q5385323",
+  "title": "Erdős–Gallai theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5385324",
+  "href_id": "Q5385324",
+  "title": "Erdős–Nagy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5385325",
+  "href_id": "Q5385325",
+  "title": "Erdős–Pósa theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5385326",
+  "href_id": "Q5385326",
+  "title": "Erdős–Stone theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5436274",
+  "href_id": "Q5436274",
+  "title": "Farrell–Markushevich theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5438320",
+  "href_id": "Q5438320",
+  "title": "Faustman–Ohlin theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5443003",
+  "href_id": "Q5443003",
+  "title": "Fenchel's duality theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5443004",
+  "href_id": "Q5443004",
+  "title": "Fenchel's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5443005",
+  "href_id": "Q5443005",
+  "title": "Fenchel–Moreau theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5445311",
+  "href_id": "Q5445311",
+  "title": "Ferrero–Washington theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5447238",
+  "href_id": "Q5447238",
+  "title": "Fieller's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5454965",
+  "href_id": "Q5454965",
+  "title": "Fisher–Tippett–Gnedenko theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5455495",
+  "href_id": "Q5455495",
+  "title": "Fitting's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5456213",
+  "href_id": "Q5456213",
+  "title": "Five circles theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5473576",
+  "href_id": "Q5473576",
+  "title": "Foster's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5494134",
+  "href_id": "Q5494134",
+  "title": "Fraňková–Helly selection theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5498822",
+  "href_id": "Q5498822",
+  "title": "Birkhoff's ergodic theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5499906",
+  "href_id": "Q5499906",
+  "title": "Shirshov–Witt theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5501344",
+  "href_id": "Q5501344",
+  "title": "Freidlin–Wentzell theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5503689",
+  "href_id": "Q5503689",
+  "title": "Bombieri–Friedlander–Iwaniec theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5505098",
+  "href_id": "Q5505098",
+  "title": "Frobenius determinant theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5505114",
+  "href_id": "Q5505114",
+  "title": "Froda's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5506929",
+  "href_id": "Q5506929",
+  "title": "Fuchs's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5507285",
+  "href_id": "Q5507285",
+  "title": "Fuglede's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5508180",
+  "href_id": "Q5508180",
+  "title": "Full employment theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5508482",
+  "href_id": "Q5508482",
+  "title": "Fulton–Hansen connectedness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5508973",
+  "href_id": "Q5508973",
+  "title": "Fundamental theorem of arbitrage-free pricing",
+  "suffix": ""
+ },
+ {
+  "id": "Q5530454",
+  "href_id": "Q5530454",
+  "title": "Gell-Mann and Low theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5552370",
+  "href_id": "Q5552370",
+  "title": "Geroch's splitting theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5567394",
+  "href_id": "Q5567394",
+  "title": "Gleason's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5576268",
+  "href_id": "Q5576268",
+  "title": "Goddard–Thorn theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5579030",
+  "href_id": "Q5579030",
+  "title": "Goldberg–Sachs theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5580171",
+  "href_id": "Q5580171",
+  "title": "Goldie's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5586067",
+  "href_id": "Q5586067",
+  "title": "Gordon–Newell theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5588002",
+  "href_id": "Q5588002",
+  "title": "Gottesman–Knill theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5597098",
+  "href_id": "Q5597098",
+  "title": "Graph structure theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5609384",
+  "href_id": "Q5609384",
+  "title": "Grinberg's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5610188",
+  "href_id": "Q5610188",
+  "title": "Gromov's compactness theorem (geometry)",
+  "suffix": ""
+ },
+ {
+  "id": "Q5610190",
+  "href_id": "Q5610190",
+  "title": "Gromov's compactness theorem (topology)",
+  "suffix": ""
+ },
+ {
+  "id": "Q5610718",
+  "href_id": "Q5610718",
+  "title": "Grothendieck's connectedness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5612131",
+  "href_id": "Q5612131",
+  "title": "Grunsky's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5612159",
+  "href_id": "Q5612159",
+  "title": "Grunwald–Wang theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5612871",
+  "href_id": "Q5612871",
+  "title": "Grötzsch's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5638112",
+  "href_id": "Q5638112",
+  "title": "Hadwiger's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5643485",
+  "href_id": "Q5643485",
+  "title": "Halpern–Läuchli theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5645731",
+  "href_id": "Q5645731",
+  "title": "Hammersley–Clifford theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5656673",
+  "href_id": "Q5656673",
+  "title": "Hardy–Littlewood tauberian theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5656674",
+  "href_id": "Q5656674",
+  "title": "Hardy–Ramanujan theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5657833",
+  "href_id": "Q5657833",
+  "title": "Harish–Chandra's regularity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5659675",
+  "href_id": "Q5659675",
+  "title": "Harnack's curve theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5675112",
+  "href_id": "Q5675112",
+  "title": "Hartogs–Rosenthal theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5680041",
+  "href_id": "Q5680041",
+  "title": "Hasse–Arf theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5697916B",
+  "href_id": "Q5697916B",
+  "title": "Waldhausen's theorem",
+  "suffix": "B"
+ },
+ {
+  "id": "Q5697916A",
+  "href_id": "Q5697916A",
+  "title": "Reidemeister–Singer Theorem",
+  "suffix": "A"
+ },
+ {
+  "id": "Q5697927",
+  "href_id": "Q5697927",
+  "title": "Gross–Zagier theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5709171",
+  "href_id": "Q5709171",
+  "title": "Helly–Bray theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5709377",
+  "href_id": "Q5709377",
+  "title": "Helmholtz theorem (classical mechanics)",
+  "suffix": ""
+ },
+ {
+  "id": "Q5761142",
+  "href_id": "Q5761142",
+  "title": "Hilbert's irreducibility theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5874979",
+  "href_id": "Q5874979",
+  "title": "Hobby–Rice theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5876058",
+  "href_id": "Q5876058",
+  "title": "Hodge index theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q5988409",
+  "href_id": "Q5988409",
+  "title": "Identity theorem for Riemann surfaces",
+  "suffix": ""
+ },
+ {
+  "id": "Q6015420",
+  "href_id": "Q6015420",
+  "title": "Increment theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6059532",
+  "href_id": "Q6059532",
+  "title": "Aronszajn–Smith theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6086104",
+  "href_id": "Q6086104",
+  "title": "Isomorphism extension theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6119825",
+  "href_id": "Q6119825",
+  "title": "Jacobson–Bourbaki theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6276298",
+  "href_id": "Q6276298",
+  "title": "Jordan's theorem (multiply transitive groups)",
+  "suffix": ""
+ },
+ {
+  "id": "Q6344729",
+  "href_id": "Q6344729",
+  "title": "Kachurovskii's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6360586",
+  "href_id": "Q6360586",
+  "title": "Kanamori–McAloon theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6373327",
+  "href_id": "Q6373327",
+  "title": "Karp–Lipton theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6378596",
+  "href_id": "Q6378596",
+  "title": "Katz–Lang finiteness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6379606",
+  "href_id": "Q6379606",
+  "title": "Kawamata–Viehweg vanishing theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6379715",
+  "href_id": "Q6379715",
+  "title": "Kawasaki's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6387087",
+  "href_id": "Q6387087",
+  "title": "Kempf–Ness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6400676",
+  "href_id": "Q6400676",
+  "title": "Kharitonov's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6402928",
+  "href_id": "Q6402928",
+  "title": "Lagrange reversion theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6403282",
+  "href_id": "Q6403282",
+  "title": "Lagrange's theorem (number theory)",
+  "suffix": ""
+ },
+ {
+  "id": "Q6407842",
+  "href_id": "Q6407842",
+  "title": "Killing–Hopf theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6414200",
+  "href_id": "Q6414200",
+  "title": "Kinoshita–Lee–Nauenberg theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6421981",
+  "href_id": "Q6421981",
+  "title": "Kneser's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6425088",
+  "href_id": "Q6425088",
+  "title": "Kodaira embedding theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6436753",
+  "href_id": "Q6436753",
+  "title": "Krener's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6442276",
+  "href_id": "Q6442276",
+  "title": "Kuiper's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6446396",
+  "href_id": "Q6446396",
+  "title": "Kurosh subgroup theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6455211",
+  "href_id": "Q6455211",
+  "title": "Kōmura's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6456122",
+  "href_id": "Q6456122",
+  "title": "L-balance theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6471668",
+  "href_id": "Q6471668",
+  "title": "Lafforgue's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6481192",
+  "href_id": "Q6481192",
+  "title": "Lambek–Moser theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6484331",
+  "href_id": "Q6484331",
+  "title": "Landau prime ideal theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6501470",
+  "href_id": "Q6501470",
+  "title": "Lauricella's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6513990",
+  "href_id": "Q6513990",
+  "title": "Lee Hwa Chung theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6516611",
+  "href_id": "Q6516611",
+  "title": "Lee–Yang theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6516731",
+  "href_id": "Q6516731",
+  "title": "Lefschetz hyperplane theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6516736",
+  "href_id": "Q6516736",
+  "title": "Lefschetz theorem on (1,1)-classes",
+  "suffix": ""
+ },
+ {
+  "id": "Q6528747",
+  "href_id": "Q6528747",
+  "title": "Leray's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6528751",
+  "href_id": "Q6528751",
+  "title": "Leray–Hirsch theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6528849",
+  "href_id": "Q6528849",
+  "title": "Lerner symmetry theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6535568",
+  "href_id": "Q6535568",
+  "title": "Levi's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6535741",
+  "href_id": "Q6535741",
+  "title": "Levitzky's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6544508",
+  "href_id": "Q6544508",
+  "title": "Lie–Palais theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6701653",
+  "href_id": "Q6701653",
+  "title": "Lukacs's proportion-sum independence theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6707093",
+  "href_id": "Q6707093",
+  "title": "Lyapunov–Malkin theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6711207",
+  "href_id": "Q6711207",
+  "title": "Lévy's modulus of continuity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6722024",
+  "href_id": "Q6722024",
+  "title": "MacMahon Master theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6733278",
+  "href_id": "Q6733278",
+  "title": "Maharam's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6734194",
+  "href_id": "Q6734194",
+  "title": "Mahler's compactness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6735549",
+  "href_id": "Q6735549",
+  "title": "Maier's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6743217",
+  "href_id": "Q6743217",
+  "title": "Malgrange preparation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6749789",
+  "href_id": "Q6749789",
+  "title": "Manin–Drinfeld theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6760432",
+  "href_id": "Q6760432",
+  "title": "Marginal value theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6771536",
+  "href_id": "Q6771536",
+  "title": "Markus−Yamabe theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6777133",
+  "href_id": "Q6777133",
+  "title": "Martingale representation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6795637",
+  "href_id": "Q6795637",
+  "title": "Maximal ergodic theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6795830",
+  "href_id": "Q6795830",
+  "title": "Separating axis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6796056",
+  "href_id": "Q6796056",
+  "title": "Maxwell's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6799039",
+  "href_id": "Q6799039",
+  "title": "Mazur's control theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6859627",
+  "href_id": "Q6859627",
+  "title": "Milliken's tree theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6859648",
+  "href_id": "Q6859648",
+  "title": "Milliken–Taylor theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6860180",
+  "href_id": "Q6860180",
+  "title": "Milman–Pettis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6867853",
+  "href_id": "Q6867853",
+  "title": "Minkowski's second theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6867867",
+  "href_id": "Q6867867",
+  "title": "Minkowski–Hlawka theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6867878",
+  "href_id": "Q6867878",
+  "title": "Minlos's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6911202",
+  "href_id": "Q6911202",
+  "title": "Moreau's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6914794",
+  "href_id": "Q6914794",
+  "title": "Morton's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6925496",
+  "href_id": "Q6925496",
+  "title": "Mountain pass theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6927135",
+  "href_id": "Q6927135",
+  "title": "Moving equilibrium theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6935007",
+  "href_id": "Q6935007",
+  "title": "Multiplicity-one theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6935403",
+  "href_id": "Q6935403",
+  "title": "Mumford vanishing theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6957141",
+  "href_id": "Q6957141",
+  "title": "Nachbin's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q6967039",
+  "href_id": "Q6967039",
+  "title": "Nash–Moser theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7020025",
+  "href_id": "Q7020025",
+  "title": "Newton's theorem about ovals",
+  "suffix": ""
+ },
+ {
+  "id": "Q7031618",
+  "href_id": "Q7031618",
+  "title": "Nielsen realization problem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7031621",
+  "href_id": "Q7031621",
+  "title": "Nielsen fixed-point theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7042768",
+  "href_id": "Q7042768",
+  "title": "No-broadcasting theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7042801",
+  "href_id": "Q7042801",
+  "title": "No-trade theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7043732",
+  "href_id": "Q7043732",
+  "title": "Kuhn's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7045226",
+  "href_id": "Q7045226",
+  "title": "No free lunch theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7047379",
+  "href_id": "Q7047379",
+  "title": "Noether's theorem on rationality for surfaces",
+  "suffix": ""
+ },
+ {
+  "id": "Q7098850",
+  "href_id": "Q7098850",
+  "title": "Optical equivalence theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7100033A",
+  "href_id": "Q7100033A",
+  "title": "Orbit theorem (Nagano–Sussmann)",
+  "suffix": "A"
+ },
+ {
+  "id": "Q7100033B",
+  "href_id": "Q7100033B",
+  "title": "Rashevsky–Chow theorem",
+  "suffix": "B"
+ },
+ {
+  "id": "Q7103669",
+  "href_id": "Q7103669",
+  "title": "Ornstein theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7106480",
+  "href_id": "Q7106480",
+  "title": "Oseledec theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7127466",
+  "href_id": "Q7127466",
+  "title": "Paley's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7130794",
+  "href_id": "Q7130794",
+  "title": "Pandya theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7137494",
+  "href_id": "Q7137494",
+  "title": "Paris–Harrington theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7139570",
+  "href_id": "Q7139570",
+  "title": "Parovicenko's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7140218",
+  "href_id": "Q7140218",
+  "title": "Parthasarathy's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7160302",
+  "href_id": "Q7160302",
+  "title": "Peeling theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7160489",
+  "href_id": "Q7160489",
+  "title": "Peetre theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7160983",
+  "href_id": "Q7160983",
+  "title": "Peixoto's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7190748",
+  "href_id": "Q7190748",
+  "title": "Pickands–Balkema–de Haan theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7200963",
+  "href_id": "Q7200963",
+  "title": "Planar separator theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7239984",
+  "href_id": "Q7239984",
+  "title": "Preimage theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7245073",
+  "href_id": "Q7245073",
+  "title": "Principal axis theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7255475",
+  "href_id": "Q7255475",
+  "title": "Pseudorandom generator theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7269076",
+  "href_id": "Q7269076",
+  "title": "No-deleting theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7269106",
+  "href_id": "Q7269106",
+  "title": "Quantum threshold theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7269437",
+  "href_id": "Q7269437",
+  "title": "Denjoy–Carleman theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7269559",
+  "href_id": "Q7269559",
+  "title": "Sylvester pentahedral theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7272004",
+  "href_id": "Q7272004",
+  "title": "Quillen–Suslin theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7272898",
+  "href_id": "Q7272898",
+  "title": "Quotient of subspace theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7283856",
+  "href_id": "Q7283856",
+  "title": "Raikov's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7288988",
+  "href_id": "Q7288988",
+  "title": "Ramanujam vanishing theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7295875",
+  "href_id": "Q7295875",
+  "title": "Ratner's theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q7296106",
+  "href_id": "Q7296106",
+  "title": "Rauch comparison theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7307252",
+  "href_id": "Q7307252",
+  "title": "Reflection theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7308146",
+  "href_id": "Q7308146",
+  "title": "Regev's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7309601",
+  "href_id": "Q7309601",
+  "title": "Whitney–Graustein Theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7310041",
+  "href_id": "Q7310041",
+  "title": "Reider's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7312009",
+  "href_id": "Q7312009",
+  "title": "Remmert–Stein theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7318284",
+  "href_id": "Q7318284",
+  "title": "Reversed compound agent theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7322366",
+  "href_id": "Q7322366",
+  "title": "Ribet's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7323144",
+  "href_id": "Q7323144",
+  "title": "Rice–Shapiro theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7333126",
+  "href_id": "Q7333126",
+  "title": "Riemann–Roch theorem for surfaces",
+  "suffix": ""
+ },
+ {
+  "id": "Q7341043",
+  "href_id": "Q7341043",
+  "title": "Robbins theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7352955",
+  "href_id": "Q7352955",
+  "title": "Robinson's joint consistency theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7359997",
+  "href_id": "Q7359997",
+  "title": "Rokhlin's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7396621",
+  "href_id": "Q7396621",
+  "title": "Saccheri–Legendre theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7430892",
+  "href_id": "Q7430892",
+  "title": "Schaefer's dichotomy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7431298",
+  "href_id": "Q7431298",
+  "title": "Schilder's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7431925",
+  "href_id": "Q7431925",
+  "title": "Schnyder's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7432872",
+  "href_id": "Q7432872",
+  "title": "Schreier refinement theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7432918",
+  "href_id": "Q7432918",
+  "title": "Schröder–Bernstein theorems for operator algebras",
+  "suffix": ""
+ },
+ {
+  "id": "Q7433034",
+  "href_id": "Q7433034",
+  "title": "Great orthogonality theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7433295",
+  "href_id": "Q7433295",
+  "title": "Osterwalder–Schrader theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7437564",
+  "href_id": "Q7437564",
+  "title": "Scott core theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7455422",
+  "href_id": "Q7455422",
+  "title": "Swan's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7496252",
+  "href_id": "Q7496252",
+  "title": "Shift theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7510574",
+  "href_id": "Q7510574",
+  "title": "Siegel–Walfisz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7512855",
+  "href_id": "Q7512855",
+  "title": "Hirzebruch signature theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7516736",
+  "href_id": "Q7516736",
+  "title": "Silverman–Toeplitz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7524563",
+  "href_id": "Q7524563",
+  "title": "Sinkhorn's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7525341",
+  "href_id": "Q7525341",
+  "title": "Sion's minimax theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7525845",
+  "href_id": "Q7525845",
+  "title": "Sipser–Lautemann theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7532192",
+  "href_id": "Q7532192",
+  "title": "Siu's semicontinuity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7536097",
+  "href_id": "Q7536097",
+  "title": "Skoda–El Mir theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7536350",
+  "href_id": "Q7536350",
+  "title": "Skorokhod's embedding theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7572588",
+  "href_id": "Q7572588",
+  "title": "Space hierarchy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7574438",
+  "href_id": "Q7574438",
+  "title": "Specht's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7597316",
+  "href_id": "Q7597316",
+  "title": "Stallings theorem about ends of groups",
+  "suffix": ""
+ },
+ {
+  "id": "Q7597317",
+  "href_id": "Q7597317",
+  "title": "Stallings–Zeeman theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7599389",
+  "href_id": "Q7599389",
+  "title": "Stanley's reciprocity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7601243",
+  "href_id": "Q7601243",
+  "title": "Star of David theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7606897",
+  "href_id": "Q7606897",
+  "title": "Steinitz theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7606940",
+  "href_id": "Q7606940",
+  "title": "Stein–Strömberg theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7617407",
+  "href_id": "Q7617407",
+  "title": "Stinespring factorization theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7619060",
+  "href_id": "Q7619060",
+  "title": "The duality theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7619449",
+  "href_id": "Q7619449",
+  "title": "Stone–von Neumann theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7621715",
+  "href_id": "Q7621715",
+  "title": "Strassmann's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7625164",
+  "href_id": "Q7625164",
+  "title": "Structure theorem for Gaussian measures",
+  "suffix": ""
+ },
+ {
+  "id": "Q7632041",
+  "href_id": "Q7632041",
+  "title": "Subspace theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7644264",
+  "href_id": "Q7644264",
+  "title": "Supersymmetry nonrenormalization theorems",
+  "suffix": ""
+ },
+ {
+  "id": "Q7661308",
+  "href_id": "Q7661308",
+  "title": "Symmetric hypergraph theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7664013",
+  "href_id": "Q7664013",
+  "title": "Sz.-Nagy's dilation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7686760",
+  "href_id": "Q7686760",
+  "title": "Bang's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7782345",
+  "href_id": "Q7782345",
+  "title": "Bertini's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7782346",
+  "href_id": "Q7782346",
+  "title": "Theorem of the cube",
+  "suffix": ""
+ },
+ {
+  "id": "Q7782348",
+  "href_id": "Q7782348",
+  "title": "Theorem of three moments",
+  "suffix": ""
+ },
+ {
+  "id": "Q7795825",
+  "href_id": "Q7795825",
+  "title": "Thompson transitivity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7795828",
+  "href_id": "Q7795828",
+  "title": "Thompson uniqueness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7809920",
+  "href_id": "Q7809920",
+  "title": "Titchmarsh convolution theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7818977",
+  "href_id": "Q7818977",
+  "title": "Tomita's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7820874",
+  "href_id": "Q7820874",
+  "title": "Tonelli's theorem (functional analysis)",
+  "suffix": ""
+ },
+ {
+  "id": "Q7824894",
+  "href_id": "Q7824894",
+  "title": "Topkis's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7825061",
+  "href_id": "Q7825061",
+  "title": "Toponogov's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7825663",
+  "href_id": "Q7825663",
+  "title": "Torelli theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7827204",
+  "href_id": "Q7827204",
+  "title": "Mazur's torsion theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7841060",
+  "href_id": "Q7841060",
+  "title": "Trichotomy theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7845353",
+  "href_id": "Q7845353",
+  "title": "Trombi–Varadarajan theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7847268",
+  "href_id": "Q7847268",
+  "title": "Trudinger's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7849521",
+  "href_id": "Q7849521",
+  "title": "Tsen's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7853325",
+  "href_id": "Q7853325",
+  "title": "Tunnell's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7856599",
+  "href_id": "Q7856599",
+  "title": "Turán–Kubilius theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7857350",
+  "href_id": "Q7857350",
+  "title": "Tverberg's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7894110",
+  "href_id": "Q7894110",
+  "title": "Universal approximation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7911648",
+  "href_id": "Q7911648",
+  "title": "Valiant–Vazirani theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7928688",
+  "href_id": "Q7928688",
+  "title": "Vietoris–Begle mapping theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7936914",
+  "href_id": "Q7936914",
+  "title": "Vitali–Hahn–Saks theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7941491",
+  "href_id": "Q7941491",
+  "title": "Von Neumann's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7959587",
+  "href_id": "Q7959587",
+  "title": "Wagner's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7966545",
+  "href_id": "Q7966545",
+  "title": "Walter theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7978735",
+  "href_id": "Q7978735",
+  "title": "Weber's theorem (Algebraic curves)",
+  "suffix": ""
+ },
+ {
+  "id": "Q7980241",
+  "href_id": "Q7980241",
+  "title": "Weinberg–Witten theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7996766",
+  "href_id": "Q7996766",
+  "title": "Whitney extension theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7996769",
+  "href_id": "Q7996769",
+  "title": "Whitney immersion theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q7999797",
+  "href_id": "Q7999797",
+  "title": "Beer's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q8002487",
+  "href_id": "Q8002487",
+  "title": "Wilkie's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q8028529",
+  "href_id": "Q8028529",
+  "title": "Witt's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q8062800",
+  "href_id": "Q8062800",
+  "title": "Z* theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q8063120",
+  "href_id": "Q8063120",
+  "title": "ZJ theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q8064722",
+  "href_id": "Q8064722",
+  "title": "Zahorski theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q8066611",
+  "href_id": "Q8066611",
+  "title": "Kövari–Sós–Turán theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q8066795",
+  "href_id": "Q8066795",
+  "title": "Zariski's main theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q8081891",
+  "href_id": "Q8081891",
+  "title": "Śleszyński–Pringsheim theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q10369454",
+  "href_id": "Q10369454",
+  "title": "Noether's second theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q10859514",
+  "href_id": "Q10859514",
+  "title": "Vafa–Witten theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q10942247",
+  "href_id": "Q10942247",
+  "title": "Hironaka theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q11573495",
+  "href_id": "Q11573495",
+  "title": "Plancherel theorem for spherical functions",
+  "suffix": ""
+ },
+ {
+  "id": "Q11704319",
+  "href_id": "Q11704319",
+  "title": "Chern–Gauss–Bonnet theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q11722674",
+  "href_id": "Q11722674",
+  "title": "Takens's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q11883897",
+  "href_id": "Q11883897",
+  "title": "Nagata's compactification theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q15080987",
+  "href_id": "Q15080987",
+  "title": "Lie's third theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q15813392",
+  "href_id": "Q15813392",
+  "title": "Barban–Davenport–Halberstam theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q15830473",
+  "href_id": "Q15830473",
+  "title": "Morley's categoricity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q15844093",
+  "href_id": "Q15844093",
+  "title": "Van Schooten's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q15859323",
+  "href_id": "Q15859323",
+  "title": "Anne's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q15872491",
+  "href_id": "Q15872491",
+  "title": "Newton's theorem (quadrilateral)",
+  "suffix": ""
+ },
+ {
+  "id": "Q15895894",
+  "href_id": "Q15895894",
+  "title": "Finsler–Hadwiger theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q16680059",
+  "href_id": "Q16680059",
+  "title": "Strong perfect graph theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q16978447",
+  "href_id": "Q16978447",
+  "title": "Grauert–Riemenschneider vanishing theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17001601",
+  "href_id": "Q17001601",
+  "title": "2-factor theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17002391",
+  "href_id": "Q17002391",
+  "title": "Arrow-Lind theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17003552",
+  "href_id": "Q17003552",
+  "title": "Alexandrov's uniqueness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17008559",
+  "href_id": "Q17008559",
+  "title": "Davenport–Schmidt theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17017973",
+  "href_id": "Q17017973",
+  "title": "Godunov's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17018210",
+  "href_id": "Q17018210",
+  "title": "Golod–Shafarevich theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17019684",
+  "href_id": "Q17019684",
+  "title": "Grushko theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17029787",
+  "href_id": "Q17029787",
+  "title": "Higman's embedding theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17080564",
+  "href_id": "Q17080564",
+  "title": "Zariski's connectedness theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17081508",
+  "href_id": "Q17081508",
+  "title": "Bing metrization theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17082552",
+  "href_id": "Q17082552",
+  "title": "Mutual fund separation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17089994X",
+  "href_id": "Q17089994X",
+  "title": "Tikhonov fixed-point theorem",
+  "suffix": "X"
+ },
+ {
+  "id": "Q17089994",
+  "href_id": "Q17089994",
+  "title": "Fixed-point theorems in infinite-dimensional spaces",
+  "suffix": ""
+ },
+ {
+  "id": "Q17098075",
+  "href_id": "Q17098075",
+  "title": "Jurkat–Richert theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17098379",
+  "href_id": "Q17098379",
+  "title": "Kaplansky's theorem on quadratic forms",
+  "suffix": ""
+ },
+ {
+  "id": "Q17101806",
+  "href_id": "Q17101806",
+  "title": "Intersection theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17102744",
+  "href_id": "Q17102744",
+  "title": "Riemann–Roch theorem for smooth manifolds",
+  "suffix": ""
+ },
+ {
+  "id": "Q17103352",
+  "href_id": "Q17103352",
+  "title": "Maximum power theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17104025",
+  "href_id": "Q17104025",
+  "title": "Riemann singularity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17104863",
+  "href_id": "Q17104863",
+  "title": "Nielsen–Ninomiya theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q17125544",
+  "href_id": "Q17125544",
+  "title": "Lickorish–Wallace theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q18205730",
+  "href_id": "Q18205730",
+  "title": "Byers–Yang theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q18206032",
+  "href_id": "Q18206032",
+  "title": "Closed subgroup theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q19323571",
+  "href_id": "Q19323571",
+  "title": "Chomsky–Schützenberger enumeration theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q19779530",
+  "href_id": "Q19779530",
+  "title": "Thomsen's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q20278711",
+  "href_id": "Q20278711",
+  "title": "Cramer's theorem (algebraic curves)",
+  "suffix": ""
+ },
+ {
+  "id": "Q25099402",
+  "href_id": "Q25099402",
+  "title": "Kolmogorov–Arnold representation theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q25303622",
+  "href_id": "Q25303622",
+  "title": "Browder–Minty theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q25304227",
+  "href_id": "Q25304227",
+  "title": "Arakelyan's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q25304301",
+  "href_id": "Q25304301",
+  "title": "Bregman–Minc inequality",
+  "suffix": ""
+ },
+ {
+  "id": "Q25345219",
+  "href_id": "Q25345219",
+  "title": "Decomposition theorem of Beilinson, Bernstein and Deligne",
+  "suffix": ""
+ },
+ {
+  "id": "Q26877569",
+  "href_id": "Q26877569",
+  "title": "Furry's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q28194853",
+  "href_id": "Q28194853",
+  "title": "Lovelock's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q28458131",
+  "href_id": "Q28458131",
+  "title": "Glivenko's theorem (probability theory)",
+  "suffix": ""
+ },
+ {
+  "id": "Q31838822",
+  "href_id": "Q31838822",
+  "title": "Kirchberger's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q48996535",
+  "href_id": "Q48996535",
+  "title": "Solèr's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q48998319",
+  "href_id": "Q48998319",
+  "title": "Frobenius reciprocity theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q55647729",
+  "href_id": "Q55647729",
+  "title": "Cramér's theorem (large deviations)",
+  "suffix": ""
+ },
+ {
+  "id": "Q56291669",
+  "href_id": "Q56291669",
+  "title": "Alspach's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q60681777",
+  "href_id": "Q60681777",
+  "title": "Constant chord theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q61163749",
+  "href_id": "Q61163749",
+  "title": "Theorem of the gnomon",
+  "suffix": ""
+ },
+ {
+  "id": "Q62051012",
+  "href_id": "Q62051012",
+  "title": "Behrend's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q96375449",
+  "href_id": "Q96375449",
+  "title": "Conway circle theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q96377355",
+  "href_id": "Q96377355",
+  "title": "Erdős–Dushnik–Miller theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q97359729",
+  "href_id": "Q97359729",
+  "title": "Stahl's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q104841721",
+  "href_id": "Q104841721",
+  "title": "Jacobson–Morozov theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q104871594",
+  "href_id": "Q104871594",
+  "title": "Joubert's theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q105222412",
+  "href_id": "Q105222412",
+  "title": "Five color theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q107535899",
+  "href_id": "Q107535899",
+  "title": "Bochner's tube theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q107547910",
+  "href_id": "Q107547910",
+  "title": "Malgrange–Zerner theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q107709489",
+  "href_id": "Q107709489",
+  "title": "Büchi-Elgot-Trakhtenbrot theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q110921617",
+  "href_id": "Q110921617",
+  "title": "Feferman–Vaught theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q111982312",
+  "href_id": "Q111982312",
+  "title": "Friedberg–Muchnik theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q112659261",
+  "href_id": "Q112659261",
+  "title": "Gamas's Theorem",
+  "suffix": ""
+ },
+ {
+  "id": "Q112740521",
+  "href_id": "Q112740521",
+  "title": "Netto's theorem",
+  "suffix": ""
+ }
+]

@@ -1,0 +1,55 @@
+name = "MissingTheorems"
+version = "0.1.0"
+defaultTargets = ["MissingTheorems"]
+
+# All dependencies are vendored source trees extracted by scripts/bootstrap.sh
+# into vendor/src/ (see vendor/PROVENANCE.md). No git or network access is needed.
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+maxSynthPendingDepth = 3
+weak.linter.mathlibStandardSet = true
+
+[[require]]
+name = "mathlib"
+path = "vendor/src/mathlib"
+
+[[require]]
+name = "batteries"
+path = "vendor/src/batteries"
+
+[[require]]
+name = "Qq"
+path = "vendor/src/Qq"
+
+[[require]]
+name = "aesop"
+path = "vendor/src/aesop"
+
+[[require]]
+name = "proofwidgets"
+path = "vendor/src/proofwidgets"
+
+[[require]]
+name = "importGraph"
+path = "vendor/src/importGraph"
+
+[[require]]
+name = "LeanSearchClient"
+path = "vendor/src/LeanSearchClient"
+
+[[require]]
+name = "plausible"
+path = "vendor/src/plausible"
+
+[[require]]
+name = "Cli"
+path = "vendor/src/Cli"
+
+# Discovers MissingTheorems.lean and every submodule below MissingTheorems/,
+# in particular MissingTheorems/Target01..Target08/{RouteA,RouteB}/**.
+[[lean_lib]]
+name = "MissingTheorems"
+globs = ["MissingTheorems", "MissingTheorems.+"]
